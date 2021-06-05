@@ -61,7 +61,7 @@ class FalseOptionalFeaturesTest(TestCase):
 
     def testCase6(self):
         print("----------False Optional Features Test Case 6----------")
-        pysat_model = self.setUp("models/fama_test_suites/error-guessing/false-optional-features/case6/fof-case6.xml")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case6/fof-case6.xml")
         expected_output = ["B","E"]
         self.FalseOptionalOperation(pysat_model, expected_output)
 

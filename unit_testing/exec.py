@@ -1,6 +1,6 @@
 from tests.ValidModelTest import ValidModelTest
 from tests.ProductsTest import ProductsTest
-#from tests.ProductsNumberTest import ProductsNumberTest
+from tests.ProductsNumberTest import ProductsNumberTest
 from tests.ValidConfigurationTest import ValidConfigurationTest
 from tests.ValidProductTest import ValidProductTest
 from tests.DeadFeaturesTest import DeadFeaturesTest
@@ -8,7 +8,7 @@ from tests.CoreFeaturesTest import CoreFeaturesTest
 from tests.FalseOptionalFeaturesTest import FalseOptionalFeaturesTest
 from tests.ErrorDetectionTest import ErrorDetectionTest
 from tests.ErrorDiagnosisTest import ErrorDiagnosisTest
-#from tests.FilterTest import FilterTest
+from tests.FilterTest import FilterTest
 
 print("----------Valid Model Tests----------\n")
 valid_model_test = ValidModelTest()
@@ -23,8 +23,8 @@ products_test.run()
 print("\n ********************** \n")
 
 print("----------Products Number Tests----------\n")
-#products_test = ProductsNumberTest()
-#products_test.run()
+products_test = ProductsNumberTest()
+products_test.run()
 
 print("\n ********************** \n")
 
@@ -71,7 +71,7 @@ error_diagnosis_test.run()
 print("\n************************\n")
 
 print("----------Filter Tests----------\n")
-#error_diagnosis_test = FilterTest()
-#error_diagnosis_test.run()
+error_diagnosis_test = FilterTest()
+error_diagnosis_test.run()
 
 print("\n************************\n")
