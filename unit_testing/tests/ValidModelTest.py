@@ -30,145 +30,145 @@ class ValidModelTest(TestCase):
 
     def testCaseMandatory(self):
         print("----------Valid Model Test Case Mandatory----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/mandatory/mandatory.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/mandatory/mandatory.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseOptional(self):
         print("----------Valid Model Test Case Optional----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/optional/optional.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/optional/optional.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
         
     def testCaseAlternative(self):
         print("----------Valid Model Test Case Alternative----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/alternative/alternative.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/alternative/alternative.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
         
     def testCaseOr(self):
         print("----------Valid Model Test Case Or----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/or/or.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/or/or.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
         
     def testCaseExcludes(self):
         print("----------Valid Model Test Case Excludes----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/excludes/excludes.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/excludes/excludes.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
         
     def testCaseRequires(self):
         print("----------Valid Model Test Case Requires----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/requires/requires.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/requires/requires.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
         
     def testCaseMandatoryOptional(self):
         print("----------Valid Model Test Case Mandatory/Optional----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/mandatory-optional/mandatory-optional.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/mandatory-optional/mandatory-optional.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
         
     def testCaseMandatoryOr(self):
         print("----------Valid Model Test Case Mandatory/Or----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/mandatory-or/mandatory-or.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/mandatory-or/mandatory-or.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseMandatoryAlternative(self):
         print("----------Valid Model Test Case Mandatory/Alternative----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/mandatory-alternative/mandatory-alternative.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/mandatory-alternative/mandatory-alternative.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseMandatoryRequires(self):
         print("----------Valid Model Test Case Mandatory/Requires----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/mandatory-requires/mandatory-requires.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/mandatory-requires/mandatory-requires.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseMandatoryExcludes(self):
         print("----------Valid Model Test Case Mandatory/Excludes----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/mandatory-excludes/mandatory-excludes.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/mandatory-excludes/mandatory-excludes.xml")
         expected_output = False
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseOptionalOr(self):
         print("----------Valid Model Test Case Optional/Or----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/optional-or/optional-or.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/optional-or/optional-or.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseOptionalAlternative(self):
         print("----------Valid Model Test Case Optional/Alternative----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/optional-alternative/optional-alternative.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/optional-alternative/optional-alternative.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseOrAlternative(self):
         print("----------Valid Model Test Case Or/Alternative----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/or-alternative/or-alternative.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/or-alternative/or-alternative.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseOrRequires(self):
         print("----------Valid Model Test Case Or/Requires----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/or-requires/or-requires.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/or-requires/or-requires.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseOrExcludes(self):
         print("----------Valid Model Test Case Or/Excludes----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/or-excludes/or-excludes.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/or-excludes/or-excludes.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseAlternativeRequires(self):
         print("----------Valid Model Test Case Alternative/Requires----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/alternative-requires/alternative-requires.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/alternative-requires/alternative-requires.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseAlternativeExcludes(self):
         print("----------Valid Model Test Case Alternative/Excludes----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/alternative-excludes/alternative-excludes.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/alternative-excludes/alternative-excludes.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseRequiresExcludes(self):
         print("----------Valid Model Test Case Requires/Excludes----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/requires-excludes/requires-excludes.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/requires-excludes/requires-excludes.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseAllRelationships(self):
         print("----------Valid Model Test Case All Relationships----------")
-        pysat_model = self.setUp("models/fama_test_suite/relationships/allrelationships/allrelationships.fama")
+        pysat_model = self.setUp("models/fama_test_suite/relationships/allrelationships/allrelationships.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseAlternativeNoOr(self):
         print("----------Valid Model Test Case Alternative No Or----------")
-        pysat_model = self.setUp("models/fama_test_suite/refinement/alternative-noOr/alternative-noOr.fama")
+        pysat_model = self.setUp("models/fama_test_suite/refinement/alternative-noOr/alternative-noOr.xml")
         expected_output = False
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseOrNoAlternative(self):
         print("----------Valid Model Test Case Or No Alternative----------")
-        pysat_model = self.setUp("models/fama_test_suite/refinement/or-noAlternative/or-noAlternative.fama")
+        pysat_model = self.setUp("models/fama_test_suite/refinement/or-noAlternative/or-noAlternative.xml")
         expected_output = True
         self.ValidModelOperation(pysat_model, expected_output)	
 
     def testCaseAlternativeNoParentLastChild(self):
         print("----------Valid Model Test Case No Parent - Last Child Selected----------")
-        pysat_model = self.setUp("models/fama_test_suite/refinement/alternative-noParentLastChild/alternative-noParentLastChild.fama")
+        pysat_model = self.setUp("models/fama_test_suite/refinement/alternative-noParentLastChild/alternative-noParentLastChild.xml")
         expected_output = False
         self.ValidModelOperation(pysat_model, expected_output)
 
     def testCaseAlternativeOddChildren(self):
         print("----------Valid Model Test Case No Parent - Last Child Selected----------")
-        pysat_model = self.setUp("models/fama_test_suite/refinement/alternative-oddChildren/alternative-oddChildren.fama")
+        pysat_model = self.setUp("models/fama_test_suite/refinement/alternative-oddChildren/alternative-oddChildren.xml")
         expected_output = False
         self.ValidModelOperation(pysat_model, expected_output)
 

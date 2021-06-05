@@ -1,11 +1,11 @@
-from fm_metamodel.famapy.metamodels.fm_metamodel.transformations.xml_transformation import XMLTransformation
-from fm_metamodel.famapy.metamodels.fm_metamodel.models.feature_model import FeatureModel
-
 from unittest import TestCase
 
-from pysat_metamodel.famapy.metamodels.pysat_metamodel.transformations.fm_to_pysat import FmToPysat
-from pysat_metamodel.famapy.metamodels.pysat_metamodel.models.pysat_model import PySATModel
-from pysat_metamodel.famapy.metamodels.pysat_metamodel.operations.glucose3_error_diagnosis import Glucose3ErrorDiagnosis
+from famapy.metamodels.fm_metamodel.transformations.xml_transformation import XMLTransformation
+from famapy.metamodels.fm_metamodel.models.feature_model import FeatureModel
+
+from famapy.metamodels.pysat_metamodel.transformations.fm_to_pysat import FmToPysat
+from famapy.metamodels.pysat_metamodel.models.pysat_model import PySATModel
+from famapy.metamodels.pysat_metamodel.operations.glucose3_error_diagnosis import Glucose3ErrorDiagnosis
 
 class ErrorDiagnosisTest(TestCase):
 
@@ -31,85 +31,85 @@ class ErrorDiagnosisTest(TestCase):
 
     def testCase1(self):
         print("----------Error Diagnosis Test Case 1----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case1/df-case1.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case1/df-case1.xml")
         expected_output = ["For dead feature D: B excludes D"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
 
     def testCase2(self):
         print("----------Error Diagnosis Test Case 2----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case2/df-case2.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case2/df-case2.xml")
         expected_output = ["For false optional feature D: B requires D"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
         
     def testCase3(self):
         print("----------Error Diagnosis Test Case 3----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case3/df-case3.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case3/df-case3.xml")
         expected_output = ["For dead feature D: D excludes B"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
         
     def testCase4(self):
         print("----------Error Diagnosis Test Case 4----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case4/df-case4.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case4/df-case4.xml")
         expected_output = ["For dead feature C: B excludes C"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
         
     def testCase5(self):
         print("----------Error Diagnosis Test Case 5----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case5/df-case5.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case5/df-case5.xml")
         expected_output = ["B excludes C"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
         
     def testCase6(self):
         print("----------Error Diagnosis Test Case 6----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case6/df-case6.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case6/df-case6.xml")
         expected_output = ["For dead feature B: B requires C", "For false optional feature C: B requires C"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
         
     def testCase7(self):
         print("----------Error Diagnosis Test Case 7----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case7/df-case7.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case7/df-case7.xml")
         expected_output =["B excludes C"] 
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
         
     def testCase8(self):
         print("----------Error Diagnosis Test Case 8----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case8/df-case8.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case8/df-case8.xml")
         expected_output = ["For dead feature B: B excludes C", "For dead feature B: B requires C"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
 
     def testCase9(self):
         print("----------Error Diagnosis Test Case 9----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case1/fof-case1.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case1/fof-case1.xml")
         expected_output = ["For false optional feature C: B requires C"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
 
     def testCase10(self):
         print("----------Error Diagnosis Test Case 10----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case2/fof-case2.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case2/fof-case2.xml")
         expected_output = ["For false optional feature D: B requires D"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
 
     def testCase11(self):
         print("----------Error Diagnosis Test Case 11----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case3/fof-case3.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case3/fof-case3.xml")
         expected_output = ["For false optional feature D: B requires D"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
 
     def testCase12(self):
         print("----------Error Diagnosis Test Case 12----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case4/fof-case4.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case4/fof-case4.xml")
         expected_output = ["For dead feature B: B requires C", "For false optional feature C: B requires C"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
 
     def testCase13(self):
         print("----------Error Diagnosis Test Case 13----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case5/fof-case5.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case5/fof-case5.xml")
         expected_output = ["For false optional feature C: B requires C"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
 
     def testCase14(self):
         print("----------Error Diagnosis Test Case 14----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case6/fof-case6.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case6/fof-case6.xml")
         expected_output = ["For dead feature F: D excludes F", "For false optional feature B: E requires B"]
         self.ErrorDiagnosisOperation(pysat_model, expected_output)
 

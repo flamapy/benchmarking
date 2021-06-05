@@ -31,37 +31,37 @@ class FalseOptionalFeaturesTest(TestCase):
 
     def testCase1(self):
         print("----------False Optional Features Test Case 1----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case1/fof-case1.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case1/fof-case1.xml")
         expected_output = ["C"]
         self.FalseOptionalOperation(pysat_model, expected_output)
 
     def testCase2(self):
         print("----------False Optional Features Test Case 2----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case2/fof-case2.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case2/fof-case2.xml")
         expected_output = ["C","D"]
         self.FalseOptionalOperation(pysat_model, expected_output)
 
     def testCase3(self):
         print("----------False Optional Features Test Case 3----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case3/fof-case3.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case3/fof-case3.xml")
         expected_output = ["C","D"]
         self.FalseOptionalOperation(pysat_model, expected_output)
 
     def testCase4(self):
         print("----------False Optional Features Test Case 4----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case4/fof-case4.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case4/fof-case4.xml")
         expected_output = ["C"]
         self.FalseOptionalOperation(pysat_model, expected_output)
 
     def testCase5(self):
         print("----------False Optional Features Test Case 5----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case5/fof-case5.fama")
+        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case5/fof-case5.xml")
         expected_output = ["C"]
         self.FalseOptionalOperation(pysat_model, expected_output)
 
     def testCase6(self):
         print("----------False Optional Features Test Case 6----------")
-        pysat_model = self.setUp("models/fama_test_suites/error-guessing/false-optional-features/case6/fof-case6.fama")
+        pysat_model = self.setUp("models/fama_test_suites/error-guessing/false-optional-features/case6/fof-case6.xml")
         expected_output = ["B","E"]
         self.FalseOptionalOperation(pysat_model, expected_output)
 

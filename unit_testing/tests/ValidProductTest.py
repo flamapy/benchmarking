@@ -25,7 +25,7 @@ class ValidProductTest(TestCase):
                 " dont match with the expected output " + str(expected_output) + "\n")
 
     def setUp(self):
-        xmlreader = XMLTransformation("models/fama_test_suite/relationships/allrelationships/allrelationships.fama")
+        xmlreader = XMLTransformation("models/fama_test_suite/relationships/allrelationships/allrelationships.xml")
         fm = xmlreader.transform()
 
         transform = FmToPysat(fm)
