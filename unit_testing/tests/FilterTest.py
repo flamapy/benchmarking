@@ -25,7 +25,7 @@ class FilterTest(TestCase):
                 " dont match with the expected output " + str(expected_output) + "\n")
 
     def setUp(self):
-        xmlreader = XMLTransformation("models/fama_test_suite/relationships/allrelationships/allrelationships.xml")
+        xmlreader = XMLTransformation("../models/fama_test_suite/relationships/allrelationships/allrelationships.xml")
         fm = xmlreader.transform()
 
         transform = FmToPysat(fm)

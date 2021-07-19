@@ -30,97 +30,97 @@ class ErrorDetectionTest(TestCase):
 
     def testCase1(self):
         print("----------Error Detection Test Case 1----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case1/df-case1.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case1/df-case1.xml")
         expected_output = ["Dead features: ['D']", "False optional features: ['E']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
 
     def testCase2(self):
         print("----------Error Detection Test Case 2----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case2/df-case2.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case2/df-case2.xml")
         expected_output = ["Dead features: ['E']", "False optional features: ['D']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
         
     def testCase3(self):
         print("----------Error Detection Test Case 3----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case3/df-case3.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case3/df-case3.xml")
         expected_output = ["Dead features: ['D']", "False optional features: ['E']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
         
     def testCase4(self):
         print("----------Error Detection Test Case 4----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case4/df-case4.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case4/df-case4.xml")
         expected_output = ["Dead features: ['C']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
         
     def testCase5(self):
         print("----------Error Detection Test Case 5----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case5/df-case5.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case5/df-case5.xml")
         expected_output = ["The model is void, so haven't any product"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
         
     def testCase6(self):
         print("----------Error Detection Test Case 6----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case6/df-case6.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case6/df-case6.xml")
         expected_output = ["Dead features: ['B']", "False optional features: ['C']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
         
     def testCase7(self):
         print("----------Error Detection Test Case 7----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case7/df-case7.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case7/df-case7.xml")
         expected_output =["The model is void, so haven't any product"] 
         self.ErrorDetectionOperation(pysat_model, expected_output)
         
     def testCase8(self):
         print("----------Error Detection Test Case 8----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case8/df-case8.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case8/df-case8.xml")
         expected_output = ["Dead features: ['B']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
 
     def testCase9(self):
         print("----------Error Detection Test Case 9----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case1/fof-case1.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/false-optional-features/case1/fof-case1.xml")
         expected_output = ["False optional features: ['C']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
 
     def testCase10(self):
         print("----------Error Detection Test Case 10----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case2/fof-case2.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/false-optional-features/case2/fof-case2.xml")
         expected_output = ["Dead features: ['E']", "False optional features: ['C', 'D']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
 
     def testCase11(self):
         print("----------Error Detection Test Case 11----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case3/fof-case3.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/false-optional-features/case3/fof-case3.xml")
         expected_output = ["False optional features: ['C', 'D']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
 
     def testCase12(self):
         print("----------Error Detection Test Case 12----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case4/fof-case4.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/false-optional-features/case4/fof-case4.xml")
         expected_output = ["Dead features: ['B']", "False optional features: ['C']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
 
     def testCase13(self):
         print("----------Error Detection Test Case 13----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case5/fof-case5.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/false-optional-features/case5/fof-case5.xml")
         expected_output = ["False optional features: ['C']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
 
     def testCase14(self):
         print("----------Error Detection Test Case 14----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/false-optional-features/case6/fof-case6.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/false-optional-features/case6/fof-case6.xml")
         expected_output = ["Dead features: ['F']", "False optional features: ['B', 'E']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
 
     def testCase15(self):
         print("----------Error Detection Test Case 15----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/redundancies/case1/r-case1.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/redundancies/case1/r-case1.xml")
         expected_output = ["Redundancies: ['B requires C']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
 
     def testCase16(self):
         print("----------Error Detection Test Case 16----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/redundancies/case2/r-case2.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/redundancies/case2/r-case2.xml")
         expected_output = ["False optional features: ['B']", "Redundancies: ['D requires B']"]
         self.ErrorDetectionOperation(pysat_model, expected_output)
 

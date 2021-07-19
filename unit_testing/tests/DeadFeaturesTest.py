@@ -30,49 +30,49 @@ class DeadFeaturesTest(TestCase):
 
     def testCase1(self):
         print("----------Dead features Test Case 1----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case1/df-case1.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case1/df-case1.xml")
         expected_output = ["D"]
         self.DeadFeaturesOperation(pysat_model, expected_output)
 
     def testCase2(self):
         print("----------Dead features Test Case 2----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case2/df-case2.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case2/df-case2.xml")
         expected_output = ["E"]
         self.DeadFeaturesOperation(pysat_model, expected_output)
         
     def testCase3(self):
         print("----------Dead features Test Case 3----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case3/df-case3.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case3/df-case3.xml")
         expected_output = ["D"]
         self.DeadFeaturesOperation(pysat_model, expected_output)
         
     def testCase4(self):
         print("----------Dead features Test Case 4----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case4/df-case4.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case4/df-case4.xml")
         expected_output = ["C"]
         self.DeadFeaturesOperation(pysat_model, expected_output)
         
     def testCase5(self):
         print("----------Dead features Test Case 5----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case5/df-case5.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case5/df-case5.xml")
         expected_output = ["A","B","C"]
         self.DeadFeaturesOperation(pysat_model, expected_output)
         
     def testCase6(self):
         print("----------Dead features Test Case 6----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case6/df-case6.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case6/df-case6.xml")
         expected_output = ["B"]
         self.DeadFeaturesOperation(pysat_model, expected_output)
         
     def testCase7(self):
         print("----------Dead features Test Case 7----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case7/df-case7.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case7/df-case7.xml")
         expected_output = ["A","B","C"]
         self.DeadFeaturesOperation(pysat_model, expected_output)
         
     def testCase8(self):
         print("----------Dead features Test Case 8----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/dead-features/case8/df-case8.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/dead-features/case8/df-case8.xml")
         expected_output = ["B"]
         self.DeadFeaturesOperation(pysat_model, expected_output)
 

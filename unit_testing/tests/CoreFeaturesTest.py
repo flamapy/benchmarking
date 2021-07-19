@@ -30,37 +30,37 @@ class CoreFeaturesTest(TestCase):
 
     def testCase1(self):
         print("----------Core Features Test Case 1----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/core-features/case1/cf-case1.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/core-features/case1/cf-case1.xml")
         expected_output = ["A","B"]
         self.CoreFeaturesOperation(pysat_model, expected_output)
 
     def testCase2(self):
         print("----------Core Features Test Case 2----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/core-features/case2/cf-case2.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/core-features/case2/cf-case2.xml")
         expected_output = ["A","B"]
         self.CoreFeaturesOperation(pysat_model, expected_output)
 
     def testCase3(self):
         print("----------Core Features Test Case 3----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/core-features/case3/cf-case3.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/core-features/case3/cf-case3.xml")
         expected_output = ["A","B","C"]
         self.CoreFeaturesOperation(pysat_model, expected_output)
 
     def testCase4(self):
         print("----------Core Features Test Case 4----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/core-features/case4/cf-case4.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/core-features/case4/cf-case4.xml")
         expected_output = ["A","B","C","E"]
         self.CoreFeaturesOperation(pysat_model, expected_output)
 
     def testCase5(self):
         print("----------Core Features Test Case 5----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/core-features/case5/cf-case5.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/core-features/case5/cf-case5.xml")
         expected_output = ["A","B","C","D"]
         self.CoreFeaturesOperation(pysat_model, expected_output)
 
     def testCase6(self):
         print("----------Core Features Test Case 6----------")
-        pysat_model = self.setUp("models/fama_test_suite/error-guessing/core-features/case6/cf-case6.xml")
+        pysat_model = self.setUp("../models/fama_test_suite/error-guessing/core-features/case6/cf-case6.xml")
         expected_output = []
         self.CoreFeaturesOperation(pysat_model, expected_output)
 
