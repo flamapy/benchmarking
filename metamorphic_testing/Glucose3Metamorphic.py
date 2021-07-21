@@ -1,3 +1,7 @@
+import copy
+import random
+from typing import Any
+
 from famapy.core.models.ast import AST
 
 from famapy.metamodels.pysat_metamodel.transformations.fm_to_pysat import FmToPysat
@@ -10,9 +14,6 @@ from famapy.metamodels.pysat_metamodel.operations.glucose3_valid import Glucose3
 
 from famapy.metamodels.fm_metamodel.models.feature_model import Feature, FeatureModel, Relation, Constraint
 
-from typing import Any
-import random
-import copy
 
 class Glucose3Metamorphic():
 
@@ -37,7 +38,7 @@ class Glucose3Metamorphic():
                     check = check and result in operation_results
             else:
                 check = operation_results == case_results
-            
+
             if check:
                 print("Everything has gone as expected for test case")
             else:
@@ -131,9 +132,9 @@ class Glucose3Metamorphic():
                 self.add_requires(features[f_number1], features[f_number2])
             else:
                 self.add_excludes(features[f_number1], features[f_number2])
-            
+
             result[copy.deepcopy(self.fm)] = copy.deepcopy(self.products)
-            
+
             if self.iteration_counter == self.iterations:
                 print("The number of desired features has been marked!")
                 break

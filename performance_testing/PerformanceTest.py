@@ -1,4 +1,4 @@
-from performance_testing.Glucose3Performance import Glucose3Performance
+from Glucose3Performance import Glucose3Performance
 
 '''
 The method Glucose3Performance has one parameter, the type of the operation to be proven, following 

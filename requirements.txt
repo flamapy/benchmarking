@@ -1,0 +1,6 @@
+pytest
+prospector
+mypy
+famapy
+famapy-sat
+famapy-fm
