@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<struct>
+		<and mandatory="true" name="wget">
+			<feature mandatory="true" name="base"/>
+			<feature name="output_file"/>
+			<feature name="server_response"/>
+			<feature name="no_clobber"/>
+			<feature name="no_dns_cache"/>
+			<alt name="verbosity">
+				<feature name="no_verbose"/>
+				<feature name="verbose"/>
+				<feature name="quiet"/>
+			</alt>
+			<feature name="no_directories"/>
+			<feature name="no_host_directories"/>
+			<feature name="no_http_keep_alive"/>
+			<feature name="no_cookies"/>
+			<feature name="save_headers"/>
+			<feature name="convert_links"/>
+			<feature name="strict_comments"/>
+		</and>
+	</struct>
+</featureModel>
