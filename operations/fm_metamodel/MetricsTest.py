@@ -5,7 +5,7 @@ from parameterized import parameterized
 from famapy.metamodels.fm_metamodel.transformations.featureide_reader import FeatureIDEReader
 
 
-INPUT_MODELS_FOLDER = '../../models/featureide/'
+INPUT_MODELS_FOLDER = 'models/featureide/'
 
 # 0 filename
 # 1 nof features 
@@ -40,48 +40,41 @@ class FMMetricsTest(unittest.TestCase):
 
     @parameterized.expand([m[:2] for m in MODELS])
     def test_nof_features(self, fm_input, nof_features):
-        reader = self.reader(self.input_folder + fm_input + self.ext)
-        fm = reader.transform()
+        fm = self.reader(self.input_folder + fm_input + self.ext).transform()
         self.assertEqual(len(fm.get_features()), nof_features)
 
     @parameterized.expand([[m[0], m[2]] for m in MODELS])
     def test_nof_constraints(self, fm_input, nof_constraints):
-        reader = self.reader(self.input_folder + fm_input + self.ext)
-        fm = reader.transform()
+        fm = self.reader(self.input_folder + fm_input + self.ext).transform()
         self.assertEqual(len(fm.get_constraints()), nof_constraints)
 
     @parameterized.expand([[m[0], m[3]] for m in MODELS])
     def test_root_feature(self, fm_input, root_feature):
-        reader = self.reader(self.input_folder + fm_input + self.ext)
-        fm = reader.transform()
+        fm = self.reader(self.input_folder + fm_input + self.ext).transform()
         self.assertEqual(fm.root.name, root_feature)
         self.assertIsNone(fm.root.get_parent())
     
     @parameterized.expand([[m[0], m[4]] for m in MODELS])
     def test_nof_or_groups(self, fm_input, nof_or_groups):
-        reader = self.reader(self.input_folder + fm_input + self.ext)
-        fm = reader.transform()
+        fm = self.reader(self.input_folder + fm_input + self.ext).transform()
         result_or_groups = sum(map(lambda f: f.is_or_group(), fm.get_features()))
         self.assertEqual(result_or_groups, nof_or_groups)
 
     @parameterized.expand([[m[0], m[5]] for m in MODELS])
     def test_nof_alternative_groups(self, fm_input, nof_alternative_groups):
-        reader = self.reader(self.input_folder + fm_input + self.ext)
-        fm = reader.transform()
+        fm = self.reader(self.input_folder + fm_input + self.ext).transform()
         result_alternative_groups = sum(map(lambda f: f.is_alternative_group(), fm.get_features()))
         self.assertEqual(result_alternative_groups, nof_alternative_groups)
 
     @parameterized.expand([[m[0], m[6]] for m in MODELS])
     def test_nof_abstract_features(self, fm_input, nof_abstract_features):
-        reader = self.reader(self.input_folder + fm_input + self.ext)
-        fm = reader.transform()
+        fm = self.reader(self.input_folder + fm_input + self.ext).transform()
         result_abstract_features = sum(map(lambda f: f.is_abstract, fm.get_features()))
         self.assertEqual(result_abstract_features, nof_abstract_features)
     
     @parameterized.expand([[m[0], m[7]] for m in MODELS])
     def test_nof_leaf_features(self, fm_input, nof_leaf_features):
-        reader = self.reader(self.input_folder + fm_input + self.ext)
-        fm = reader.transform()
+        fm = self.reader(self.input_folder + fm_input + self.ext).transform()
         result_leaf_features = sum(map(lambda f: f.is_leaf(), fm.get_features()))
         self.assertEqual(result_leaf_features, nof_leaf_features)
 

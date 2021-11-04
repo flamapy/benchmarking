@@ -1,6 +1,6 @@
 import unittest
 
-from famapy.metamodels.fm_metamodel.transformations.xml_transformation import XMLTransformation
+from famapy.metamodels.fm_metamodel.transformations.xml_reader import XMLReader
 
 from famapy.core.models import Configuration
 
@@ -20,7 +20,7 @@ class ValidProductTest(unittest.TestCase):
         self.assertEqual(is_valid, expected_output)
 
     def setUp(self):
-        xmlreader = XMLTransformation("models/fama_test_suite/relationships/allrelationships/allrelationships.xml")
+        xmlreader = XMLReader("models/fama_test_suite/relationships/allrelationships/allrelationships.xml")
         fm = xmlreader.transform()
 
         transform = FmToPysat(fm)

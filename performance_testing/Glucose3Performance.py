@@ -2,7 +2,7 @@ from pysat.solvers import Glucose3
 
 from famapy.core.models import Configuration
 
-from famapy.metamodels.fm_metamodel.transformations.xml_transformation import XMLTransformation
+from famapy.metamodels.fm_metamodel.transformations.xml_reader import XMLReader
 
 from famapy.metamodels.pysat_metamodel.transformations.fm_to_pysat import FmToPysat
 from famapy.metamodels.pysat_metamodel.operations.glucose3_false_optional_features import Glucose3FalseOptionalFeatures
@@ -60,7 +60,7 @@ class Glucose3Performance():
         for cons in self.percent_cons:
             for feat in self.features:
                 path = "models/synthetic/simple_betty_gen_models/" + str(feat) + "/" + str(cons) + "-9.xml"
-                parser = XMLTransformation(path)
+                parser = XMLReader(path)
                 fm = parser.transform()
 
                 if self.operation_type in ("vc","f"):

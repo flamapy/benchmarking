@@ -1,6 +1,6 @@
 import unittest
 
-from famapy.metamodels.fm_metamodel.transformations.xml_transformation import XMLTransformation
+from famapy.metamodels.fm_metamodel.transformations.xml_reader import XMLReader
 
 from famapy.metamodels.pysat_metamodel.transformations.fm_to_pysat import FmToPysat
 from famapy.metamodels.pysat_metamodel.models.pysat_model import PySATModel
@@ -18,7 +18,7 @@ class FalseOptionalFeaturesTest(unittest.TestCase):
         self.assertEqual(false_optional_features, expected_output)
 
     def load_model(self, model_path):
-        xmlreader = XMLTransformation(model_path)
+        xmlreader = XMLReader(model_path)
         fm = xmlreader.transform()
 
         transform = FmToPysat(fm)

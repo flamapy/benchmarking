@@ -1,13 +1,13 @@
 import unittest
 
-from famapy.metamodels.fm_metamodel.transformations.xml_transformation import XMLTransformation
+from famapy.metamodels.fm_metamodel.transformations.xml_reader import XMLReader
 
 from Glucose3Metamorphic import Glucose3Metamorphic
 
 
 class MetamorphicTest(unittest.TestCase):
     def test_metamorphic(self):
-        parser = XMLTransformation("models/simple/example.xml")
+        parser = XMLReader("models/simple/example.xml")
         fm = parser.transform()
 
         '''
