@@ -4,10 +4,6 @@ from famapy.metamodels.fm_metamodel.transformations.featureide_reader import Fea
 from famapy.metamodels.fm_metamodel.operations import (
     FMCoreFeatures,
     FMCountLeafs,
-    FMLeafFeatures,
-    FMAverageBranchingFactor,
-    FMFeatureAncestors,
-    FMMaxDepthTree,
     FMEstimatedProductsNumber
 )
 
@@ -44,12 +40,6 @@ def test_nof_core_features(model_name, expected_nof_core_features):
     fm = get_model(model_name)
     core_features = FMCoreFeatures().execute(fm).get_result()
     assert len(core_features) == expected_nof_core_features
-
-@pytest.mark.parametrize("model_name, expected_nof_leaf_features", [[m[0], m[4]] for m in MODELS])
-def test_nof_leaf_features(model_name, expected_nof_leaf_features):
-    fm = get_model(model_name)
-    leaf_features = FMCountLeafs().execute(fm).get_result()
-    assert leaf_features == expected_nof_leaf_features
 
 @pytest.mark.parametrize("model_name, expected_nof_leaf_features", [[m[0], m[4]] for m in MODELS])
 def test_nof_leaf_features(model_name, expected_nof_leaf_features):
