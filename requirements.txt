@@ -1,5 +1,4 @@
 pytest
-parameterized
 prospector
 mypy
 famapy
