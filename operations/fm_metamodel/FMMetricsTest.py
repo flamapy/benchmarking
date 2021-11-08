@@ -14,9 +14,11 @@ from famapy.metamodels.fm_metamodel.transformations.featureide_reader import Fea
 # 7 nof leaf features
 MODELS = [('pizzas', 12, 1, 'Pizza', 1, 2, 1, 8),
           ('wget', 17, 0, 'wget', 0, 1, 0, 15),
+          ('GPL', 18, 13, 'GPL', 1, 0, 1, 13),
           ('tankwar', 37, 0, 'TankWar', 2, 6, 0, 26),
           ('mobilemedia2', 43, 3, 'MobileMedia2', 4, 3, 0, 31),
           ('jHipster', 45, 13, 'JHipster', 0, 10, 13, 32),
+          ('aafms_framework', 59, 14, 'AAFMFramework', 6, 1, 1, 45),
           ('WeaFQAs', 179, 7, 'FQAs', 13, 23, 0, 124),
           ('busybox-1.18.0', 854, 67, 'root', 0, 8, 0, 683),
           ('embtoolkit', 1179, 167, 'root', 0, 70, 0, 966),

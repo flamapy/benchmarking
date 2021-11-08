@@ -16,9 +16,11 @@ from famapy.metamodels.fm_metamodel.operations import (
 # 5 nof of products
 MODELS = [('pizzas', 4, 0, 0, 8, 42),
           ('wget', 2, 0, 0, 15, 8192),
+          ('GPL', 5, 0, 0, 13, 436),
           ('tankwar', 7, 0, 0, 26, 1741824),
           ('mobilemedia2', 10, 0, 0, 31, 3096576),
           ('jHipster', 7, 0, 0, 32, 26256),
+          ('aafms_framework-namesAdapted', 3, 0, 0, 45, 132224790560),
           ('WeaFQAs', 1, 0, 0, 124, 1677039951397603738337280),
           ('busybox-1.18.0', 20, 15, 3, 683, 0),
           ('embtoolkit', 78, 42, 0, 966, 0),
