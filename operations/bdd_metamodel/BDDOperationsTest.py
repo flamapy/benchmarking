@@ -11,7 +11,7 @@ from models.models_info import *
 
 
 def get_model(model_name):
-    fm = FeatureIDEReader(INPUT_MODELS_FOLDER + model_name + EXTENSION).transform()
+    fm = FeatureIDEReader(INPUT_FIDE_MODELS_FOLDER + model_name + FIDE_EXTENSION).transform()
     bdd = FmToBDD(fm).transform()
     return bdd
 

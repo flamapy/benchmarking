@@ -5,8 +5,11 @@ from FeatureIDE, others have been calculated using a bruce-force algorithm
 (e.g., product distribution).
 """
 
-INPUT_MODELS_FOLDER = 'models/featureide/'
-EXTENSION = '.xml'
+INPUT_FIDE_MODELS_FOLDER = 'models/featureide/'
+INPUT_TXTCNF_MODELS_FOLDER = 'models/textual_cnf/'
+
+FIDE_EXTENSION = '.xml'
+TXTCNF_EXTENSION = '.txt'
 
 # FM properties and metrics (the value assigned to the constant is irrelevant)
 NAME = 0
@@ -108,7 +111,7 @@ MODELS = [
      NOF_PRODUCTS: 3096576,
      PRODUCT_DISTRIBUTION: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 72, 684, 3012, 8736, 20376, 43380, 86736, 156864, 247872, 339732, 408252, 436416, 417852, 355992, 264852, 167604, 87468, 36300, 11436, 2556, 360, 24, 0, 0, 0, 0, 0, 0]
     },
-    {NAME: 'aafms_framework',
+    {NAME: 'aafms_framework-namesAdapted',
      NOF_FEATURES: 59,
      NOF_CONSTRAINTS: 14,
      NOF_ORS: 6,

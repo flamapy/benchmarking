@@ -11,7 +11,7 @@ from models.models_info import *
 
 
 def get_model(model_name) -> str:
-    return FeatureIDEReader(INPUT_MODELS_FOLDER + model_name + EXTENSION).transform()
+    return FeatureIDEReader(INPUT_FIDE_MODELS_FOLDER + model_name + FIDE_EXTENSION).transform()
 
 
 @pytest.mark.parametrize("model_name, expected_nof_core_features", [[m[NAME], m[NOF_CORE_FEATURES]] for m in MODELS])
