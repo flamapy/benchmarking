@@ -1,0 +1,22 @@
+%Relationships
+APISolvers: [1,10]{python-sat pycosat pylgl pyPicosat pyglucose pycryptosat satyrn satispy umo pydepqbf};
+Packages: DepMng [APISolvers] [ParserTechnology] [Utils];
+pip: [pipdeptree];
+Solvers: [1,10]{MiniSAT PicoSAT Glucose CaDiCaL Minicard Maple CryptoMiniSat Lingeling CBC DepQBF};
+AutomatedReasoning: Solvers [Operations];
+Operations: [1,8]{ValidModel ValidConfiguration ValidProduct AllProducts DeadFeatures CoreFeatures ErrorDetection ErrorDiagnosis};
+AAFMFramework: [Packages] Metamodels [AutomatedReasoning] [Interoperability] System;
+DepMng: pip setuptools [wheel] [pkg-resources];
+Interoperability: [1,3]{FeatureIDE SPLOT UVL};
+System: [1,1]{Linux Win};
+ParserTechnology: [1,3]{antlr4-python3-runtime SimpleParse lark-parser};
+lark-parser: [ebnf];
+Metamodels: [FeatureModel] [CNFModel] [DecisionModel];
+Utils: [1,2]{six pybind11};
+
+%Constraints
+CBC REQUIRES umo;
+DepQBF REQUIRES pydepqbf;
+CryptoMiniSat REQUIRES pycryptosat;
+python-sat REQUIRES six;
+UVL REQUIRES ParserTechnology;

@@ -1,0 +1,100 @@
+namespace AAFMFramework
+
+features
+	AAFMFramework {abstract}	
+		mandatory
+			Metamodels	
+				optional
+					FeatureModel
+					CNFModel
+					DecisionModel
+			System	
+				alternative
+					Linux
+					Win
+
+		optional
+			Packages	
+				mandatory
+					DepMng	
+						mandatory
+							pip	
+								optional
+									pipdeptree
+							setuptools
+
+						optional
+							wheel
+							pkg-resources
+
+				optional
+					APISolvers	
+						or
+							python-sat
+							pycosat
+							pylgl
+							pyPicosat
+							pyglucose
+							pycryptosat
+							satyrn
+							satispy
+							umo
+							pydepqbf
+					ParserTechnology	
+						or
+							antlr4-python3-runtime
+							SimpleParse
+							lark-parser	
+								optional
+									ebnf
+					Utils	
+						or
+							six
+							pybind11
+			AutomatedReasoning	
+				mandatory
+					Solvers	
+						or
+							MiniSAT
+							PicoSAT
+							Glucose
+							CaDiCaL
+							Minicard
+							Maple
+							CryptoMiniSat
+							Lingeling
+							CBC
+							DepQBF
+
+				optional
+					Operations	
+						or
+							ValidModel
+							ValidConfiguration
+							ValidProduct
+							AllProducts
+							DeadFeatures
+							CoreFeatures
+							ErrorDetection
+							ErrorDiagnosis
+			Interoperability	
+				or
+					FeatureIDE
+					SPLOT
+					UVL
+
+constraints
+	MiniSAT => satispy | umo | python-sat
+	Lingeling => satispy | pylgl | python-sat
+	CBC => umo
+	PicoSAT => pycosat | pyPicosat
+	Glucose => python-sat | pyglucose
+	DepQBF => pydepqbf
+	CaDiCaL | Maple | Minicard => python-sat
+	CryptoMiniSat => pycryptosat
+	satyrn | pyglucose => pybind11
+	python-sat => six
+	Win => !umo & !pyPicosat
+	CNFModel <=> AutomatedReasoning
+	Linux & pip => pkg-resources
+	!UVL | ParserTechnology

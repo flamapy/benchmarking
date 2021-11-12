@@ -1,0 +1,8 @@
+%Relationships
+Size: [1,1]{Normal Big};
+Pizza: Topping Size Dough [CheesyCrust];
+Topping: [1,3]{Salami Ham Mozzarella};
+Dough: [1,1]{Neapolitan Sicilian};
+
+%Constraints
+CheesyCrust REQUIRES Big;

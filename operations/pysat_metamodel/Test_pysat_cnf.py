@@ -1,7 +1,6 @@
 import pytest
 
 from famapy.metamodels.pysat_metamodel.transformations.cnf_to_pysat import CNFReader
-
 from famapy.metamodels.pysat_metamodel.operations.glucose3_products_number import Glucose3ProductsNumber
 from famapy.metamodels.pysat_metamodel.operations.glucose3_valid import Glucose3Valid
 from famapy.metamodels.pysat_metamodel.operations.glucose3_core_features import Glucose3CoreFeatures

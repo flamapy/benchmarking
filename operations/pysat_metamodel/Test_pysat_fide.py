@@ -1,10 +1,10 @@
-from famapy.metamodels.pysat_metamodel.models.pysat_model import PySATModel
 import pytest
 
 from famapy.metamodels.fm_metamodel.models import FeatureModel
 from famapy.metamodels.fm_metamodel.transformations.featureide_reader import FeatureIDEReader
-from famapy.metamodels.pysat_metamodel.transformations.fm_to_pysat import FmToPysat
 
+from famapy.metamodels.pysat_metamodel.models.pysat_model import PySATModel
+from famapy.metamodels.pysat_metamodel.transformations.fm_to_pysat import FmToPysat
 from famapy.metamodels.pysat_metamodel.operations.glucose3_products_number import Glucose3ProductsNumber
 from famapy.metamodels.pysat_metamodel.operations.glucose3_valid import Glucose3Valid
 from famapy.metamodels.pysat_metamodel.operations.glucose3_core_features import Glucose3CoreFeatures

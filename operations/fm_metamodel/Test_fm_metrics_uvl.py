@@ -1,12 +1,12 @@
 import pytest
 
-from famapy.metamodels.fm_metamodel.transformations.featureide_reader import FeatureIDEReader
+from famapy.metamodels.fm_metamodel.transformations.uvl_reader import UVLReader
 
 from models.models_info import *
 
 
 def get_model(model_name) -> str:
-    return FeatureIDEReader(INPUT_FIDE_MODELS_FOLDER + model_name + FIDE_EXTENSION).transform()
+    return UVLReader(INPUT_UVL_MODELS_FOLDER + model_name + UVL_EXTENSION).transform()
 
 
 @pytest.mark.parametrize("model_name, expected_nof_features", [[m[NAME], m[NOF_FEATURES]] for m in MODELS])

@@ -1,0 +1,14 @@
+%Relationships
+Platform: [1,1]{PC Handy};
+Image: [fuer_PC] [fuer_Handy] [IMG_tool];
+Language: [1,1]{EN DE};
+GUI: Map [Image];
+Record: [1,1]{Re_fuer_PC Re_fuer_Handy};
+Soundeffekt: [1,1]{Sound_fuer_pc Sound_fuer_Handy};
+Tanks: [1,3]{USA_M1Abrams Germany_Leopard China_Type99};
+Tools: [1,6]{Beschleunigung einfrieren Bombe Energie Feuerkraft Mars};
+AI: [1,1]{Easy Hard};
+TankWar: Platform [Tools] [explodieren] GUI [Record] [Soundeffekt] Language Tanks AI;
+Map: [1,1]{M_240 M_600 M_780};
+
+%Constraints

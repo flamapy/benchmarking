@@ -1,0 +1,43 @@
+namespace GPL
+
+features
+	GPL {abstract}	
+		mandatory
+			Driver	
+				mandatory
+					Benchmark
+			GraphType	
+				optional
+					Directed
+					Undirected
+			Algorithms	
+				or
+					Num
+					CC
+					Prim
+					SCC
+					Kruskal
+					Cycle
+					Shortest
+
+		optional
+			Weight
+			Search	
+				optional
+					DFS
+					BFS
+
+constraints
+	Num => Search
+	CC => Undirected
+	CC => Search
+	SCC => Directed
+	Prim => Undirected
+	SCC => DFS
+	Cycle => DFS
+	Kruskal => Undirected
+	Kruskal => Weight
+	Prim => Weight
+	Kruskal => !Prim
+	Shortest => Directed
+	Shortest => Weight
