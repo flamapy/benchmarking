@@ -1,11 +1,12 @@
 import pytest
 
+from famapy.metamodels.fm_metamodel.models import FeatureModel
 from famapy.metamodels.fm_metamodel.transformations.uvl_reader import UVLReader
 
 from models.models_info import *
 
 
-def get_model(model_name) -> str:
+def get_model(model_name) -> FeatureModel:
     return UVLReader(INPUT_UVL_MODELS_FOLDER + model_name + UVL_EXTENSION).transform()
 
 
@@ -48,3 +49,21 @@ def test_nof_leaf_features(fm_input, expected_nof_leaf_features):
     fm = get_model(fm_input)
     result_leaf_features = sum(map(lambda f: f.is_leaf(), fm.get_features()))
     assert result_leaf_features == expected_nof_leaf_features
+
+@pytest.mark.parametrize("model_name, expected_nof_mandatory_feats", [[m[NAME], m[NOF_MANDATORY_FEATURES]] for m in MODELS])
+def test_nof_mandatory_features(model_name, expected_nof_mandatory_feats):
+    fm = get_model(model_name)
+    mandatory_features = fm.get_mandatory_features()
+    assert len(mandatory_features) == expected_nof_mandatory_feats
+
+@pytest.mark.parametrize("model_name, expected_nof_real_optional_feats", [[m[NAME], m[NOF_REAL_OPTIONAL_FEATURES]] for m in MODELS])
+def test_nof_real_optional_features(model_name, expected_nof_real_optional_feats):
+    fm = get_model(model_name)
+    real_optional_features = fm.get_real_optional_features()
+    assert len(real_optional_features) == expected_nof_real_optional_feats
+
+@pytest.mark.parametrize("model_name, expected_optional_feats", [[m[NAME], m[NOF_OPTIONAL_FEATURES]] for m in MODELS])
+def test_nof_optional_features(model_name, expected_optional_feats):
+    fm = get_model(model_name)
+    optional_features = fm.get_optional_features()
+    assert len(optional_features) == expected_optional_feats
