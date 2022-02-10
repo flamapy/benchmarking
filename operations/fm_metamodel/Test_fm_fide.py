@@ -27,7 +27,7 @@ def test_nof_leaf_features(model_name, expected_nof_leaf_features):
     assert leaf_features == expected_nof_leaf_features
 
 @pytest.mark.parametrize("model_name, expected_nof_products", [[m[NAME], m[NOF_PRODUCTS]] for m in MODELS])
-def test_nof_products(model_name, expected_nof_products):
+def test_nof_estimated_products(model_name, expected_nof_products):
     fm = get_model(model_name)
     nof_products = FMEstimatedProductsNumber().execute(fm).get_result()
-    assert nof_products == expected_nof_products
+    assert expected_nof_products is None or nof_products >= expected_nof_products
