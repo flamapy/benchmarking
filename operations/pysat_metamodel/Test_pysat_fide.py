@@ -46,6 +46,5 @@ def test_nof_dead_features(model_name, expected_nof_dead_features):
 @pytest.mark.parametrize("model_name, expected_nof_false_optional_features", [[m[NAME], m[NOF_FALSE_OPTIONAL_FEATURES]] for m in MODELS])
 def test_nof_false_optional_features(model_name, expected_nof_false_optional_features):
     fm, pysat_model = get_model(model_name)
-    optional_features = [f.name for f in fm.get_features() if not f.is_mandatory()]
-    false_optional_features = Glucose3FalseOptionalFeatures(optional_features).execute(pysat_model).get_result()
+    false_optional_features = Glucose3FalseOptionalFeatures(fm).execute(pysat_model).get_result()
     assert len(false_optional_features) == expected_nof_false_optional_features
