@@ -56,12 +56,6 @@ def test_nof_mandatory_features(model_name, expected_nof_mandatory_feats):
     mandatory_features = fm.get_mandatory_features()
     assert len(mandatory_features) == expected_nof_mandatory_feats
 
-@pytest.mark.parametrize("model_name, expected_nof_real_optional_feats", [[m[NAME], m[NOF_REAL_OPTIONAL_FEATURES]] for m in MODELS])
-def test_nof_real_optional_features(model_name, expected_nof_real_optional_feats):
-    fm = get_model(model_name)
-    real_optional_features = fm.get_real_optional_features()
-    assert len(real_optional_features) == expected_nof_real_optional_feats
-
 @pytest.mark.parametrize("model_name, expected_optional_feats", [[m[NAME], m[NOF_OPTIONAL_FEATURES]] for m in MODELS])
 def test_nof_optional_features(model_name, expected_optional_feats):
     fm = get_model(model_name)
