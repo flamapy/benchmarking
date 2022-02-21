@@ -1,0 +1,5 @@
+%Relationships
+wget: base [output_file] [server_response] [no_clobber] [no_dns_cache] [verbosity] [no_directories] [no_host_directories] [no_http_keep_alive] [no_cookies] [save_headers] [convert_links] [strict_comments];
+verbosity: [1,1]{no_verbose verbose quiet};
+
+%Constraints

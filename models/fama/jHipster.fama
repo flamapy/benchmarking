@@ -1,0 +1,19 @@
+%Relationships
+Hibernate2ndLvlCache: [1,1]{HazelCast EhCache};
+Server: [1,1]{MicroserviceApplication UaaServer};
+BackEnd: [1,1]{Gradle Maven};
+JHipster: Generator Authentication [SocialLogin] [Database] [SpringWebSockets] [Libsass] [ClusteredSession] BackEnd [InternationalizationSupport] [Docker] TestingFrameworks;
+Production: [1,1]{MySQL MariaDB PostgreSQL};
+Database: [1,1]{SQL Cassandra MongoDB};
+Development: [1,1]{H2 PostgreeSQLDev MariaDBDev MySql};
+H2: [1,1]{DiskBased InMemory};
+SQL: [Hibernate2ndLvlCache] Development Production [ElasticSearch];
+Authentication: [1,1]{HTTPSession OAuth2 Uaa JWT};
+TestingFrameworks: [Protractor] Gatling Cucumber;
+Application: [1,1]{MicroserviceGateway Monolithic};
+Generator: [1,1]{Server Application};
+
+%Constraints
+UaaServer REQUIRES Uaa;
+Server EXCLUDES Protractor;
+Libsass REQUIRES Application;

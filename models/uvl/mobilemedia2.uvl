@@ -1,0 +1,65 @@
+namespace MobileMedia2
+
+features
+	MobileMedia2	
+		mandatory
+			MediaSelection	
+				or
+					Photo
+					Music	
+						mandatory
+							MusicPlayer
+					Video
+			MediaManagement	
+				optional
+					Favourites	
+						mandatory
+							SetFavourites
+							ViewFavourites
+					CopyMedia
+					SMSTransfer	
+						optional
+							ReceivePhoto
+							SendPhoto
+			ScreenSize	
+				alternative
+					Screen1
+					Screen2
+					Screen3
+			Speakerphone
+			Calendar
+			Radio
+			CallManager
+			OS	
+				alternative
+					Androide
+					WindowsMobile
+					Symbia
+					iOS
+			Language	
+				or
+					Portuguese
+					English
+					Spanish
+
+		optional
+			TVDigital
+			TouchScreen
+			Connectivity	
+				or
+					Bluetooth
+					WiFi	
+						or
+							Gmail
+							GoogleMaps
+							Youtube
+			GPS
+			ResolutionCamera	
+				alternative
+					Resolution3MP
+					Resolution8MP
+
+constraints
+	Video | !ResolutionCamera
+	Photo | !ResolutionCamera
+	!CopyMedia | SMSTransfer

@@ -1,0 +1,21 @@
+%Relationships
+GPL: Driver GraphType [Weight] [Search] Algorithms;
+Driver: Benchmark;
+Algorithms: [1,7]{Num CC Prim SCC Kruskal Cycle Shortest};
+GraphType: [Directed] [Undirected];
+Search: [DFS] [BFS];
+
+%Constraints
+Num REQUIRES Search;
+CC REQUIRES Undirected;
+CC REQUIRES Search;
+SCC REQUIRES Directed;
+Prim REQUIRES Undirected;
+SCC REQUIRES DFS;
+Cycle REQUIRES DFS;
+Kruskal REQUIRES Undirected;
+Kruskal REQUIRES Weight;
+Prim REQUIRES Weight;
+Kruskal EXCLUDES Prim;
+Shortest REQUIRES Directed;
+Shortest REQUIRES Weight;

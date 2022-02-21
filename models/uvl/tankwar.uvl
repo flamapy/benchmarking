@@ -1,0 +1,55 @@
+namespace TankWar
+
+features
+	TankWar	
+		mandatory
+			Platform	
+				alternative
+					PC
+					Handy
+			GUI	
+				mandatory
+					Map	
+						alternative
+							M_240
+							M_600
+							M_780
+
+				optional
+					Image	
+						optional
+							fuer_PC
+							fuer_Handy
+							IMG_tool
+			Language	
+				alternative
+					EN
+					DE
+			Tanks	
+				or
+					USA_M1Abrams
+					Germany_Leopard
+					China_Type99
+			AI	
+				alternative
+					Easy
+					Hard
+
+		optional
+			Tools	
+				or
+					Beschleunigung
+					einfrieren
+					Bombe
+					Energie
+					Feuerkraft
+					Mars
+			explodieren
+			Record	
+				alternative
+					Re_fuer_PC
+					Re_fuer_Handy
+			Soundeffekt	
+				alternative
+					Sound_fuer_pc
+					Sound_fuer_Handy

@@ -1,0 +1,18 @@
+%Relationships
+Favourites: SetFavourites ViewFavourites;
+MobileMedia2: MediaSelection MediaManagement ScreenSize Speakerphone Calendar Radio CallManager [TVDigital] OS [TouchScreen] [Connectivity] [GPS] [ResolutionCamera] Language;
+Language: [1,3]{Portuguese English Spanish};
+ScreenSize: [1,1]{Screen1 Screen2 Screen3};
+MediaManagement: [Favourites] [CopyMedia] [SMSTransfer];
+SMSTransfer: [ReceivePhoto] [SendPhoto];
+OS: [1,1]{Androide WindowsMobile Symbia iOS};
+ResolutionCamera: [1,1]{Resolution3MP Resolution8MP};
+Music: MusicPlayer;
+Connectivity: [1,2]{Bluetooth WiFi};
+WiFi: [1,3]{Gmail GoogleMaps Youtube};
+MediaSelection: [1,3]{Photo Music Video};
+
+%Constraints
+ResolutionCamera REQUIRES Video;
+ResolutionCamera REQUIRES Photo;
+CopyMedia REQUIRES SMSTransfer;
