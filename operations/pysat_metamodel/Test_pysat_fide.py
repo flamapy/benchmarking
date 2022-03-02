@@ -1,7 +1,7 @@
 import pytest
 
 from famapy.metamodels.fm_metamodel.models import FeatureModel
-from famapy.metamodels.fm_metamodel.transformations.featureide_reader import FeatureIDEReader
+from famapy.metamodels.fm_metamodel.transformations import FeatureIDEReader
 
 from famapy.metamodels.pysat_metamodel.models.pysat_model import PySATModel
 from famapy.metamodels.pysat_metamodel.transformations.fm_to_pysat import FmToPysat

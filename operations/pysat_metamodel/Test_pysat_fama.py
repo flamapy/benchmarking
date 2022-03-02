@@ -1,7 +1,7 @@
 import pytest
 
 from famapy.metamodels.fm_metamodel.models import FeatureModel
-from famapy.metamodels.fm_metamodel.transformations.afm_reader import AFMTransformation
+from famapy.metamodels.fm_metamodel.transformations import AFMReader
 
 from famapy.metamodels.pysat_metamodel.models.pysat_model import PySATModel
 from famapy.metamodels.pysat_metamodel.transformations.fm_to_pysat import FmToPysat
@@ -15,7 +15,7 @@ from models.models_info import *
 
 
 def get_model(model_name: str) -> tuple[FeatureModel, PySATModel]:
-    fm = AFMTransformation(INPUT_FAMA_MODELS_FOLDER + model_name + FAMA_EXTENSION).transform()
+    fm = AFMReader(INPUT_FAMA_MODELS_FOLDER + model_name + FAMA_EXTENSION).transform()
     pysat_model = FmToPysat(fm).transform()
     return (fm, pysat_model)
 
