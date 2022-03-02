@@ -1,7 +1,7 @@
 import pytest
 
 from famapy.metamodels.fm_metamodel.models import FeatureModel
-from famapy.metamodels.fm_metamodel.transformations.xml_reader import XMLReader
+from famapy.metamodels.fm_metamodel.transformations import XMLReader
 
 from famapy.metamodels.pysat_metamodel.models.pysat_model import PySATModel
 from famapy.metamodels.pysat_metamodel.transformations.fm_to_pysat import FmToPysat
@@ -61,18 +61,15 @@ FOF_MODELS = {'case1/fof-case1': ['C'],
 def test_false_optional_features(model_name, expected_fof):
     models_path = BASE_INPUT_MODELS_PATH + 'error-guessing/false-optional-features/'
     fm, pysat_model = get_model(models_path + model_name)
-    optional_features = [f.name for f in fm.get_features() if not f.is_mandatory()]
     false_optional_features = Glucose3FalseOptionalFeatures(fm).execute(pysat_model).get_result()
     assert set(false_optional_features) == set(expected_fof)
 
 
-R_MODELS = {'case1/r-case1': ["Dead features: ['D']",
-                              "False optional features: ['E']"],
-            'case2/r-case2': ["Dead features: ['E']",
-                              "False optional features: ['D']"]}
+R_MODELS = {'case1/r-case1': [],
+            'case2/r-case2': ["False optional features: ['B']"]}
 @pytest.mark.parametrize("model_name, expected_redundancies", [[m, f] for m, f in R_MODELS.items()])
 def test_error_detection(model_name, expected_redundancies):
     models_path = BASE_INPUT_MODELS_PATH + 'error-guessing/redundancies/'
-    _, pysat_model = get_model(models_path + model_name)
-    redundancies = Glucose3ErrorDetection().execute(pysat_model).get_result()
+    fm, pysat_model = get_model(models_path + model_name)
+    redundancies = Glucose3ErrorDetection(fm).execute(pysat_model).get_result()
     assert set(redundancies) == set(expected_redundancies)
