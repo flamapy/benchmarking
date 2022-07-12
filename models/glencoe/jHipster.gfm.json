@@ -1,0 +1,904 @@
+{
+    "id": "FM_JHipster",
+    "name": "FM_JHipster",
+    "features": {
+        "JHipster": {
+            "name": "JHipster",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Generator": {
+            "name": "Generator",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Server": {
+            "name": "Server",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "Application": {
+            "name": "Application",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "MicroserviceApplication": {
+            "name": "MicroserviceApplication",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "UaaServer": {
+            "name": "UaaServer",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MicroserviceGateway": {
+            "name": "MicroserviceGateway",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Monolithic": {
+            "name": "Monolithic",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Authentication": {
+            "name": "Authentication",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "HTTPSession": {
+            "name": "HTTPSession",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "OAuth2": {
+            "name": "OAuth2",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Uaa": {
+            "name": "Uaa",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "JWT": {
+            "name": "JWT",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SocialLogin": {
+            "name": "SocialLogin",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Database": {
+            "name": "Database",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "SQL": {
+            "name": "SQL",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Cassandra": {
+            "name": "Cassandra",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MongoDB": {
+            "name": "MongoDB",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Hibernate2ndLvlCache": {
+            "name": "Hibernate2ndLvlCache",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "HazelCast": {
+            "name": "HazelCast",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "EhCache": {
+            "name": "EhCache",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Development": {
+            "name": "Development",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "H2": {
+            "name": "H2",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "PostgreeSQLDev": {
+            "name": "PostgreeSQLDev",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MariaDBDev": {
+            "name": "MariaDBDev",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MySql": {
+            "name": "MySql",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DiskBased": {
+            "name": "DiskBased",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "InMemory": {
+            "name": "InMemory",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Production": {
+            "name": "Production",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "MySQL": {
+            "name": "MySQL",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MariaDB": {
+            "name": "MariaDB",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "PostgreSQL": {
+            "name": "PostgreSQL",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ElasticSearch": {
+            "name": "ElasticSearch",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SpringWebSockets": {
+            "name": "SpringWebSockets",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Libsass": {
+            "name": "Libsass",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ClusteredSession": {
+            "name": "ClusteredSession",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "BackEnd": {
+            "name": "BackEnd",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Gradle": {
+            "name": "Gradle",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Maven": {
+            "name": "Maven",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "InternationalizationSupport": {
+            "name": "InternationalizationSupport",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Docker": {
+            "name": "Docker",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "TestingFrameworks": {
+            "name": "TestingFrameworks",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Protractor": {
+            "name": "Protractor",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Gatling": {
+            "name": "Gatling",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Cucumber": {
+            "name": "Cucumber",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        }
+    },
+    "tree": {
+        "id": "JHipster",
+        "children": [
+            {
+                "id": "Generator",
+                "children": [
+                    {
+                        "id": "Server",
+                        "children": [
+                            {
+                                "id": "MicroserviceApplication"
+                            },
+                            {
+                                "id": "UaaServer"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Application",
+                        "children": [
+                            {
+                                "id": "MicroserviceGateway"
+                            },
+                            {
+                                "id": "Monolithic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Authentication",
+                "children": [
+                    {
+                        "id": "HTTPSession"
+                    },
+                    {
+                        "id": "OAuth2"
+                    },
+                    {
+                        "id": "Uaa"
+                    },
+                    {
+                        "id": "JWT"
+                    }
+                ]
+            },
+            {
+                "id": "SocialLogin"
+            },
+            {
+                "id": "Database",
+                "children": [
+                    {
+                        "id": "SQL",
+                        "children": [
+                            {
+                                "id": "Hibernate2ndLvlCache",
+                                "children": [
+                                    {
+                                        "id": "HazelCast"
+                                    },
+                                    {
+                                        "id": "EhCache"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Development",
+                                "children": [
+                                    {
+                                        "id": "H2",
+                                        "children": [
+                                            {
+                                                "id": "DiskBased"
+                                            },
+                                            {
+                                                "id": "InMemory"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "PostgreeSQLDev"
+                                    },
+                                    {
+                                        "id": "MariaDBDev"
+                                    },
+                                    {
+                                        "id": "MySql"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Production",
+                                "children": [
+                                    {
+                                        "id": "MySQL"
+                                    },
+                                    {
+                                        "id": "MariaDB"
+                                    },
+                                    {
+                                        "id": "PostgreSQL"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "ElasticSearch"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Cassandra"
+                    },
+                    {
+                        "id": "MongoDB"
+                    }
+                ]
+            },
+            {
+                "id": "SpringWebSockets"
+            },
+            {
+                "id": "Libsass"
+            },
+            {
+                "id": "ClusteredSession"
+            },
+            {
+                "id": "BackEnd",
+                "children": [
+                    {
+                        "id": "Gradle"
+                    },
+                    {
+                        "id": "Maven"
+                    }
+                ]
+            },
+            {
+                "id": "InternationalizationSupport"
+            },
+            {
+                "id": "Docker"
+            },
+            {
+                "id": "TestingFrameworks",
+                "children": [
+                    {
+                        "id": "Protractor"
+                    },
+                    {
+                        "id": "Gatling"
+                    },
+                    {
+                        "id": "Cucumber"
+                    }
+                ]
+            }
+        ]
+    },
+    "constraints": {
+        "1": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "AndTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "OAuth2"
+                            ]
+                        },
+                        {
+                            "type": "AndTerm",
+                            "operands": [
+                                {
+                                    "type": "NotTerm",
+                                    "operands": [
+                                        {
+                                            "type": "FeatureTerm",
+                                            "operands": [
+                                                "SocialLogin"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "NotTerm",
+                                    "operands": [
+                                        {
+                                            "type": "FeatureTerm",
+                                            "operands": [
+                                                "MicroserviceApplication"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "SQL"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "MongoDB"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "2": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "SocialLogin"
+                    ]
+                },
+                {
+                    "type": "AndTerm",
+                    "operands": [
+                        {
+                            "type": "OrTerm",
+                            "operands": [
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "HTTPSession"
+                                    ]
+                                },
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "JWT"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "AndTerm",
+                            "operands": [
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "Monolithic"
+                                    ]
+                                },
+                                {
+                                    "type": "OrTerm",
+                                    "operands": [
+                                        {
+                                            "type": "FeatureTerm",
+                                            "operands": [
+                                                "SQL"
+                                            ]
+                                        },
+                                        {
+                                            "type": "FeatureTerm",
+                                            "operands": [
+                                                "MongoDB"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "3": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "UaaServer"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Uaa"
+                    ]
+                }
+            ]
+        },
+        "4": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "AndTerm",
+                    "operands": [
+                        {
+                            "type": "NotTerm",
+                            "operands": [
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "OAuth2"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "AndTerm",
+                            "operands": [
+                                {
+                                    "type": "NotTerm",
+                                    "operands": [
+                                        {
+                                            "type": "FeatureTerm",
+                                            "operands": [
+                                                "SocialLogin"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "NotTerm",
+                                    "operands": [
+                                        {
+                                            "type": "FeatureTerm",
+                                            "operands": [
+                                                "MicroserviceApplication"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "SQL"
+                            ]
+                        },
+                        {
+                            "type": "OrTerm",
+                            "operands": [
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "MongoDB"
+                                    ]
+                                },
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "Cassandra"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "5": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Server"
+                    ]
+                },
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "Protractor"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "6": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "Server"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Protractor"
+                    ]
+                }
+            ]
+        },
+        "7": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "MySQL"
+                    ]
+                },
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "H2"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "MySql"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "8": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "MicroserviceApplication"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "MicroserviceGateway"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "JWT"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "Uaa"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "9": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Monolithic"
+                    ]
+                },
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "JWT"
+                            ]
+                        },
+                        {
+                            "type": "OrTerm",
+                            "operands": [
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "HTTPSession"
+                                    ]
+                                },
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "OAuth2"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "10": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "MariaDB"
+                    ]
+                },
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "H2"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "MariaDBDev"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "11": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "PostgreSQL"
+                    ]
+                },
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "H2"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "PostgreeSQLDev"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "12": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "SpringWebSockets"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "ClusteredSession"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Application"
+                    ]
+                }
+            ]
+        },
+        "13": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Libsass"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Application"
+                    ]
+                }
+            ]
+        }
+    }
+}

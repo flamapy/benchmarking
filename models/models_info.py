@@ -8,11 +8,13 @@ from FeatureIDE, others have been calculated using a bruce-force algorithm
 INPUT_FIDE_MODELS_FOLDER = 'models/featureide/'
 INPUT_UVL_MODELS_FOLDER = 'models/uvl/'
 INPUT_FAMA_MODELS_FOLDER = 'models/fama/'
+INPUT_GLENCOE_MODELS_FOLDER = 'models/glencoe/'
 INPUT_TXTCNF_MODELS_FOLDER = 'models/textual_cnf/'
 
 FIDE_EXTENSION = '.xml'
 UVL_EXTENSION = '.uvl'
 FAMA_EXTENSION = '.fama'
+GLENCOE_EXTENSION = '.gfm.json'
 TXTCNF_EXTENSION = '.txt'
 
 # FM properties and metrics (the value assigned to the constant is irrelevant)
