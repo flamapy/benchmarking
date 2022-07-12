@@ -1,0 +1,141 @@
+{
+    "id": "FM_Pizza",
+    "name": "FM_Pizza",
+    "features": {
+        "Pizza": {
+            "name": "Pizza",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Topping": {
+            "name": "Topping",
+            "optional": false,
+            "type": "OR",
+            "note": ""
+        },
+        "Salami": {
+            "name": "Salami",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Ham": {
+            "name": "Ham",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Mozzarella": {
+            "name": "Mozzarella",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Size": {
+            "name": "Size",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Normal": {
+            "name": "Normal",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Big": {
+            "name": "Big",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Dough": {
+            "name": "Dough",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Neapolitan": {
+            "name": "Neapolitan",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Sicilian": {
+            "name": "Sicilian",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CheesyCrust": {
+            "name": "CheesyCrust",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        }
+    },
+    "tree": {
+        "id": "Pizza",
+        "children": [
+            {
+                "id": "Topping",
+                "children": [
+                    {
+                        "id": "Salami"
+                    },
+                    {
+                        "id": "Ham"
+                    },
+                    {
+                        "id": "Mozzarella"
+                    }
+                ]
+            },
+            {
+                "id": "Size",
+                "children": [
+                    {
+                        "id": "Normal"
+                    },
+                    {
+                        "id": "Big"
+                    }
+                ]
+            },
+            {
+                "id": "Dough",
+                "children": [
+                    {
+                        "id": "Neapolitan"
+                    },
+                    {
+                        "id": "Sicilian"
+                    }
+                ]
+            },
+            {
+                "id": "CheesyCrust"
+            }
+        ]
+    },
+    "constraints": {
+        "1": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "CheesyCrust"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Big"
+                    ]
+                }
+            ]
+        }
+    }
+}

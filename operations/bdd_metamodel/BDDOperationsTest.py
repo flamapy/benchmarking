@@ -4,7 +4,7 @@ from famapy.metamodels.fm_metamodel.transformations.featureide_reader import Fea
 from famapy.metamodels.bdd_metamodel.transformations.fm_to_bdd import FmToBDD
 from famapy.metamodels.bdd_metamodel.operations import (
     BDDProductsNumber,
-    BDDProductDistributionBF
+    BDDProductDistribution
 )
 
 from models.models_info import *
@@ -24,5 +24,5 @@ def test_nof_products(model_name, expected_nof_products):
 @pytest.mark.parametrize("model_name, expected_product_dist", [[m[NAME], m[PRODUCT_DISTRIBUTION]] for m in MODELS[:6]])
 def test_product_distribution(model_name, expected_product_dist):
     model = get_model(model_name)
-    product_dist = BDDProductDistributionBF().execute(model).get_result()
+    product_dist = BDDProductDistribution().execute(model).get_result()
     assert product_dist == expected_product_dist

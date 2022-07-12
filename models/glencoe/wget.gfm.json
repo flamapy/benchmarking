@@ -1,0 +1,164 @@
+{
+    "id": "FM_wget",
+    "name": "FM_wget",
+    "features": {
+        "wget": {
+            "name": "wget",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "base": {
+            "name": "base",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "output_file": {
+            "name": "output_file",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "server_response": {
+            "name": "server_response",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "no_clobber": {
+            "name": "no_clobber",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "no_dns_cache": {
+            "name": "no_dns_cache",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "verbosity": {
+            "name": "verbosity",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "no_verbose": {
+            "name": "no_verbose",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "verbose": {
+            "name": "verbose",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "quiet": {
+            "name": "quiet",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "no_directories": {
+            "name": "no_directories",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "no_host_directories": {
+            "name": "no_host_directories",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "no_http_keep_alive": {
+            "name": "no_http_keep_alive",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "no_cookies": {
+            "name": "no_cookies",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "save_headers": {
+            "name": "save_headers",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "convert_links": {
+            "name": "convert_links",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "strict_comments": {
+            "name": "strict_comments",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        }
+    },
+    "tree": {
+        "id": "wget",
+        "children": [
+            {
+                "id": "base"
+            },
+            {
+                "id": "output_file"
+            },
+            {
+                "id": "server_response"
+            },
+            {
+                "id": "no_clobber"
+            },
+            {
+                "id": "no_dns_cache"
+            },
+            {
+                "id": "verbosity",
+                "children": [
+                    {
+                        "id": "no_verbose"
+                    },
+                    {
+                        "id": "verbose"
+                    },
+                    {
+                        "id": "quiet"
+                    }
+                ]
+            },
+            {
+                "id": "no_directories"
+            },
+            {
+                "id": "no_host_directories"
+            },
+            {
+                "id": "no_http_keep_alive"
+            },
+            {
+                "id": "no_cookies"
+            },
+            {
+                "id": "save_headers"
+            },
+            {
+                "id": "convert_links"
+            },
+            {
+                "id": "strict_comments"
+            }
+        ]
+    },
+    "constraints": {}
+}

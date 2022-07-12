@@ -1,0 +1,511 @@
+{
+    "id": "FM_Truck",
+    "name": "FM_Truck",
+    "features": {
+        "Truck": {
+            "name": "Truck",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Weight": {
+            "name": "Weight",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Lightweight": {
+            "name": "Lightweight",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "Heavyweight": {
+            "name": "Heavyweight",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "Tons12": {
+            "name": "Tons12",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Tons18": {
+            "name": "Tons18",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Tons23": {
+            "name": "Tons23",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Tons40": {
+            "name": "Tons40",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Type": {
+            "name": "Type",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Semitrailer": {
+            "name": "Semitrailer",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Tank": {
+            "name": "Tank",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Flatbed": {
+            "name": "Flatbed",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Dumper": {
+            "name": "Dumper",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Engine": {
+            "name": "Engine",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "KW160": {
+            "name": "KW160",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "KW280": {
+            "name": "KW280",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "KW400": {
+            "name": "KW400",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Cabin": {
+            "name": "Cabin",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "HighRoof": {
+            "name": "HighRoof",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SleeperCabin": {
+            "name": "SleeperCabin",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "Bed1": {
+            "name": "Bed1",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Beds2": {
+            "name": "Beds2",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Axles": {
+            "name": "Axles",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Count": {
+            "name": "Count",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Axles2": {
+            "name": "Axles2",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MultipleRearAxles": {
+            "name": "MultipleRearAxles",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "Axles3": {
+            "name": "Axles3",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Axles4": {
+            "name": "Axles4",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "AdditionalSteeringAxle": {
+            "name": "AdditionalSteeringAxle",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Drivetrain": {
+            "name": "Drivetrain",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "DrivenAxle1": {
+            "name": "DrivenAxle1",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DrivenAxles2": {
+            "name": "DrivenAxles2",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DrivenAxles3": {
+            "name": "DrivenAxles3",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        }
+    },
+    "tree": {
+        "id": "Truck",
+        "children": [
+            {
+                "id": "Weight",
+                "children": [
+                    {
+                        "id": "Lightweight",
+                        "children": [
+                            {
+                                "id": "Tons12"
+                            },
+                            {
+                                "id": "Tons18"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Heavyweight",
+                        "children": [
+                            {
+                                "id": "Tons23"
+                            },
+                            {
+                                "id": "Tons40"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Type",
+                "children": [
+                    {
+                        "id": "Semitrailer"
+                    },
+                    {
+                        "id": "Tank"
+                    },
+                    {
+                        "id": "Flatbed",
+                        "children": [
+                            {
+                                "id": "Dumper"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Engine",
+                "children": [
+                    {
+                        "id": "KW160"
+                    },
+                    {
+                        "id": "KW280"
+                    },
+                    {
+                        "id": "KW400"
+                    }
+                ]
+            },
+            {
+                "id": "Cabin",
+                "children": [
+                    {
+                        "id": "HighRoof"
+                    },
+                    {
+                        "id": "SleeperCabin",
+                        "children": [
+                            {
+                                "id": "Bed1"
+                            },
+                            {
+                                "id": "Beds2"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Axles",
+                "children": [
+                    {
+                        "id": "Count",
+                        "children": [
+                            {
+                                "id": "Axles2"
+                            },
+                            {
+                                "id": "MultipleRearAxles",
+                                "children": [
+                                    {
+                                        "id": "Axles3"
+                                    },
+                                    {
+                                        "id": "Axles4"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "AdditionalSteeringAxle"
+                    },
+                    {
+                        "id": "Drivetrain",
+                        "children": [
+                            {
+                                "id": "DrivenAxle1"
+                            },
+                            {
+                                "id": "DrivenAxles2"
+                            },
+                            {
+                                "id": "DrivenAxles3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "constraints": {
+        "1": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Beds2"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "HighRoof"
+                    ]
+                }
+            ]
+        },
+        "2": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "DrivenAxles2"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "MultipleRearAxles"
+                    ]
+                }
+            ]
+        },
+        "3": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "DrivenAxles3"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Axles4"
+                    ]
+                }
+            ]
+        },
+        "4": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Tons40"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "KW400"
+                    ]
+                }
+            ]
+        },
+        "5": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "AdditionalSteeringAxle"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Axles4"
+                    ]
+                }
+            ]
+        },
+        "6": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "HighRoof"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Heavyweight"
+                    ]
+                }
+            ]
+        },
+        "7": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Semitrailer"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Tons18"
+                    ]
+                }
+            ]
+        },
+        "8": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "SleeperCabin"
+                    ]
+                },
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "Flatbed"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "9": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "SleeperCabin"
+                    ]
+                },
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "Tank"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "10": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Tank"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "KW400"
+                    ]
+                }
+            ]
+        }
+    }
+}

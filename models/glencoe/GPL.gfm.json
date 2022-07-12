@@ -1,0 +1,406 @@
+{
+    "id": "FM_GPL",
+    "name": "FM_GPL",
+    "features": {
+        "GPL": {
+            "name": "GPL",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Driver": {
+            "name": "Driver",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Benchmark": {
+            "name": "Benchmark",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "GraphType": {
+            "name": "GraphType",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Directed": {
+            "name": "Directed",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Undirected": {
+            "name": "Undirected",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Weight": {
+            "name": "Weight",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Search": {
+            "name": "Search",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DFS": {
+            "name": "DFS",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "BFS": {
+            "name": "BFS",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Algorithms": {
+            "name": "Algorithms",
+            "optional": false,
+            "type": "OR",
+            "note": ""
+        },
+        "Num": {
+            "name": "Num",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CC": {
+            "name": "CC",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Prim": {
+            "name": "Prim",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SCC": {
+            "name": "SCC",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Kruskal": {
+            "name": "Kruskal",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Cycle": {
+            "name": "Cycle",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Shortest": {
+            "name": "Shortest",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        }
+    },
+    "tree": {
+        "id": "GPL",
+        "children": [
+            {
+                "id": "Driver",
+                "children": [
+                    {
+                        "id": "Benchmark"
+                    }
+                ]
+            },
+            {
+                "id": "GraphType",
+                "children": [
+                    {
+                        "id": "Directed"
+                    },
+                    {
+                        "id": "Undirected"
+                    }
+                ]
+            },
+            {
+                "id": "Weight"
+            },
+            {
+                "id": "Search",
+                "children": [
+                    {
+                        "id": "DFS"
+                    },
+                    {
+                        "id": "BFS"
+                    }
+                ]
+            },
+            {
+                "id": "Algorithms",
+                "children": [
+                    {
+                        "id": "Num"
+                    },
+                    {
+                        "id": "CC"
+                    },
+                    {
+                        "id": "Prim"
+                    },
+                    {
+                        "id": "SCC"
+                    },
+                    {
+                        "id": "Kruskal"
+                    },
+                    {
+                        "id": "Cycle"
+                    },
+                    {
+                        "id": "Shortest"
+                    }
+                ]
+            }
+        ]
+    },
+    "constraints": {
+        "1": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Num"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Search"
+                    ]
+                }
+            ]
+        },
+        "2": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "CC"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Undirected"
+                    ]
+                }
+            ]
+        },
+        "3": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "CC"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Search"
+                    ]
+                }
+            ]
+        },
+        "4": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "SCC"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Directed"
+                    ]
+                }
+            ]
+        },
+        "5": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Prim"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Undirected"
+                    ]
+                }
+            ]
+        },
+        "6": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "SCC"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "DFS"
+                    ]
+                }
+            ]
+        },
+        "7": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Cycle"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "DFS"
+                    ]
+                }
+            ]
+        },
+        "8": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Kruskal"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Undirected"
+                    ]
+                }
+            ]
+        },
+        "9": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Kruskal"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Weight"
+                    ]
+                }
+            ]
+        },
+        "10": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Prim"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Weight"
+                    ]
+                }
+            ]
+        },
+        "11": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Kruskal"
+                    ]
+                },
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "Prim"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "12": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Shortest"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Directed"
+                    ]
+                }
+            ]
+        },
+        "13": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Shortest"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Weight"
+                    ]
+                }
+            ]
+        }
+    }
+}

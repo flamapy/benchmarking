@@ -1,0 +1,485 @@
+{
+    "id": "FM_MobileMedia2",
+    "name": "FM_MobileMedia2",
+    "features": {
+        "MobileMedia2": {
+            "name": "MobileMedia2",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MediaSelection": {
+            "name": "MediaSelection",
+            "optional": false,
+            "type": "OR",
+            "note": ""
+        },
+        "Photo": {
+            "name": "Photo",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Music": {
+            "name": "Music",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Video": {
+            "name": "Video",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MusicPlayer": {
+            "name": "MusicPlayer",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MediaManagement": {
+            "name": "MediaManagement",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Favourites": {
+            "name": "Favourites",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SetFavourites": {
+            "name": "SetFavourites",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ViewFavourites": {
+            "name": "ViewFavourites",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CopyMedia": {
+            "name": "CopyMedia",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SMSTransfer": {
+            "name": "SMSTransfer",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ReceivePhoto": {
+            "name": "ReceivePhoto",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SendPhoto": {
+            "name": "SendPhoto",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ScreenSize": {
+            "name": "ScreenSize",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Screen1": {
+            "name": "Screen1",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Screen2": {
+            "name": "Screen2",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Screen3": {
+            "name": "Screen3",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Speakerphone": {
+            "name": "Speakerphone",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Calendar": {
+            "name": "Calendar",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Radio": {
+            "name": "Radio",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CallManager": {
+            "name": "CallManager",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "TVDigital": {
+            "name": "TVDigital",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "OS": {
+            "name": "OS",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Androide": {
+            "name": "Androide",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "WindowsMobile": {
+            "name": "WindowsMobile",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Symbia": {
+            "name": "Symbia",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "iOS": {
+            "name": "iOS",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "TouchScreen": {
+            "name": "TouchScreen",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Connectivity": {
+            "name": "Connectivity",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "Bluetooth": {
+            "name": "Bluetooth",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "WiFi": {
+            "name": "WiFi",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "Gmail": {
+            "name": "Gmail",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "GoogleMaps": {
+            "name": "GoogleMaps",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Youtube": {
+            "name": "Youtube",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "GPS": {
+            "name": "GPS",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ResolutionCamera": {
+            "name": "ResolutionCamera",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "Resolution3MP": {
+            "name": "Resolution3MP",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Resolution8MP": {
+            "name": "Resolution8MP",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Language": {
+            "name": "Language",
+            "optional": false,
+            "type": "OR",
+            "note": ""
+        },
+        "Portuguese": {
+            "name": "Portuguese",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "English": {
+            "name": "English",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Spanish": {
+            "name": "Spanish",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        }
+    },
+    "tree": {
+        "id": "MobileMedia2",
+        "children": [
+            {
+                "id": "MediaSelection",
+                "children": [
+                    {
+                        "id": "Photo"
+                    },
+                    {
+                        "id": "Music",
+                        "children": [
+                            {
+                                "id": "MusicPlayer"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Video"
+                    }
+                ]
+            },
+            {
+                "id": "MediaManagement",
+                "children": [
+                    {
+                        "id": "Favourites",
+                        "children": [
+                            {
+                                "id": "SetFavourites"
+                            },
+                            {
+                                "id": "ViewFavourites"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "CopyMedia"
+                    },
+                    {
+                        "id": "SMSTransfer",
+                        "children": [
+                            {
+                                "id": "ReceivePhoto"
+                            },
+                            {
+                                "id": "SendPhoto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "ScreenSize",
+                "children": [
+                    {
+                        "id": "Screen1"
+                    },
+                    {
+                        "id": "Screen2"
+                    },
+                    {
+                        "id": "Screen3"
+                    }
+                ]
+            },
+            {
+                "id": "Speakerphone"
+            },
+            {
+                "id": "Calendar"
+            },
+            {
+                "id": "Radio"
+            },
+            {
+                "id": "CallManager"
+            },
+            {
+                "id": "TVDigital"
+            },
+            {
+                "id": "OS",
+                "children": [
+                    {
+                        "id": "Androide"
+                    },
+                    {
+                        "id": "WindowsMobile"
+                    },
+                    {
+                        "id": "Symbia"
+                    },
+                    {
+                        "id": "iOS"
+                    }
+                ]
+            },
+            {
+                "id": "TouchScreen"
+            },
+            {
+                "id": "Connectivity",
+                "children": [
+                    {
+                        "id": "Bluetooth"
+                    },
+                    {
+                        "id": "WiFi",
+                        "children": [
+                            {
+                                "id": "Gmail"
+                            },
+                            {
+                                "id": "GoogleMaps"
+                            },
+                            {
+                                "id": "Youtube"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "GPS"
+            },
+            {
+                "id": "ResolutionCamera",
+                "children": [
+                    {
+                        "id": "Resolution3MP"
+                    },
+                    {
+                        "id": "Resolution8MP"
+                    }
+                ]
+            },
+            {
+                "id": "Language",
+                "children": [
+                    {
+                        "id": "Portuguese"
+                    },
+                    {
+                        "id": "English"
+                    },
+                    {
+                        "id": "Spanish"
+                    }
+                ]
+            }
+        ]
+    },
+    "constraints": {
+        "1": {
+            "type": "OrTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Video"
+                    ]
+                },
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "ResolutionCamera"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "2": {
+            "type": "OrTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Photo"
+                    ]
+                },
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "ResolutionCamera"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "3": {
+            "type": "OrTerm",
+            "operands": [
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "CopyMedia"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "SMSTransfer"
+                    ]
+                }
+            ]
+        }
+    }
+}

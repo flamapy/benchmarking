@@ -1,0 +1,1888 @@
+{
+    "id": "FM_FQAs",
+    "name": "FM_FQAs",
+    "features": {
+        "FQAs": {
+            "name": "FQAs",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "Security": {
+            "name": "Security",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "Usability": {
+            "name": "Usability",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "Persistence": {
+            "name": "Persistence",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "ContextAwareness": {
+            "name": "ContextAwareness",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "Performance": {
+            "name": "Performance",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Encryption": {
+            "name": "Encryption",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Authentication": {
+            "name": "Authentication",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Hashing": {
+            "name": "Hashing",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Confidentiality": {
+            "name": "Confidentiality",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Privacy": {
+            "name": "Privacy",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Integrity": {
+            "name": "Integrity",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Non_Repudiation": {
+            "name": "Non_Repudiation",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "EncryptionAlgorithms": {
+            "name": "EncryptionAlgorithms",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Asymmetric": {
+            "name": "Asymmetric",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "Symmetric": {
+            "name": "Symmetric",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "RSA": {
+            "name": "RSA",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DSA": {
+            "name": "DSA",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ECDSA": {
+            "name": "ECDSA",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "AES": {
+            "name": "AES",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DESede": {
+            "name": "DESede",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Blowfish": {
+            "name": "Blowfish",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DES": {
+            "name": "DES",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "KeySize": {
+            "name": "KeySize",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "EncryptionImplementations": {
+            "name": "EncryptionImplementations",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "JavaxCrypto": {
+            "name": "JavaxCrypto",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "BouncyCastle": {
+            "name": "BouncyCastle",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "EncryptionOperations": {
+            "name": "EncryptionOperations",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Encrypt": {
+            "name": "Encrypt",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Decrypt": {
+            "name": "Decrypt",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Mode": {
+            "name": "Mode",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "CBC": {
+            "name": "CBC",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ECB": {
+            "name": "ECB",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CFB": {
+            "name": "CFB",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CTR": {
+            "name": "CTR",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CTS": {
+            "name": "CTS",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Padding": {
+            "name": "Padding",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "PKCS5": {
+            "name": "PKCS5",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "PKCS1": {
+            "name": "PKCS1",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "OAEP": {
+            "name": "OAEP",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "AuthenticationImplementations": {
+            "name": "AuthenticationImplementations",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "JAAS": {
+            "name": "JAAS",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SpringSecurity": {
+            "name": "SpringSecurity",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "AuthenticationOperations": {
+            "name": "AuthenticationOperations",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Authenticate": {
+            "name": "Authenticate",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "AuthenticationMechanism": {
+            "name": "AuthenticationMechanism",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "UserPassword": {
+            "name": "UserPassword",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DigitalCertificate": {
+            "name": "DigitalCertificate",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Biometric": {
+            "name": "Biometric",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SocialID": {
+            "name": "SocialID",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Pin": {
+            "name": "Pin",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MatrixCode": {
+            "name": "MatrixCode",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "PseudonymousCertificate": {
+            "name": "PseudonymousCertificate",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "PasswordLength": {
+            "name": "PasswordLength",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "PasswordType": {
+            "name": "PasswordType",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "Numeric": {
+            "name": "Numeric",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Alphanumeric": {
+            "name": "Alphanumeric",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SpecialChars": {
+            "name": "SpecialChars",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "LimitedSession": {
+            "name": "LimitedSession",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "AuthenticationLogging": {
+            "name": "AuthenticationLogging",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "AnonymousUser": {
+            "name": "AnonymousUser",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "HashingImplementations": {
+            "name": "HashingImplementations",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "JavaSecurityMessageDigest": {
+            "name": "JavaSecurityMessageDigest",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Guava": {
+            "name": "Guava",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "HashingOperations": {
+            "name": "HashingOperations",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Hash": {
+            "name": "Hash",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "HashingAlgorithms": {
+            "name": "HashingAlgorithms",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "MD5": {
+            "name": "MD5",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SHA1": {
+            "name": "SHA1",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SHA256": {
+            "name": "SHA256",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SHA512": {
+            "name": "SHA512",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Logging": {
+            "name": "Logging",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ContextualHelp": {
+            "name": "ContextualHelp",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ExecutionControl": {
+            "name": "ExecutionControl",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Internationalization": {
+            "name": "Internationalization",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Feedback": {
+            "name": "Feedback",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "LoggingOperations": {
+            "name": "LoggingOperations",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Log": {
+            "name": "Log",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "LoggingImplementations": {
+            "name": "LoggingImplementations",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Log4J": {
+            "name": "Log4J",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "LogBack": {
+            "name": "LogBack",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "JavaUtilLogging": {
+            "name": "JavaUtilLogging",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SimpleImplementationSLF4J": {
+            "name": "SimpleImplementationSLF4J",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Handler": {
+            "name": "Handler",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "ConsoleLog": {
+            "name": "ConsoleLog",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "FileLog": {
+            "name": "FileLog",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DatabaseLog": {
+            "name": "DatabaseLog",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Format": {
+            "name": "Format",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "TXT": {
+            "name": "TXT",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "XML": {
+            "name": "XML",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "HTML": {
+            "name": "HTML",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "JSON": {
+            "name": "JSON",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Level": {
+            "name": "Level",
+            "optional": false,
+            "type": "OR",
+            "note": ""
+        },
+        "Trace": {
+            "name": "Trace",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Debug": {
+            "name": "Debug",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Info": {
+            "name": "Info",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Warning": {
+            "name": "Warning",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Error": {
+            "name": "Error",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CypheredMessages": {
+            "name": "CypheredMessages",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "HistoryLog": {
+            "name": "HistoryLog",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ErrorLog": {
+            "name": "ErrorLog",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "TraceFile": {
+            "name": "TraceFile",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ContextualHelpOperations": {
+            "name": "ContextualHelpOperations",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ShowHelp": {
+            "name": "ShowHelp",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ContextualHelpImplementations": {
+            "name": "ContextualHelpImplementations",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "JavaWizardAPI": {
+            "name": "JavaWizardAPI",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "HelpType": {
+            "name": "HelpType",
+            "optional": false,
+            "type": "OR",
+            "note": ""
+        },
+        "Tutorial": {
+            "name": "Tutorial",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Wizard": {
+            "name": "Wizard",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "UserType": {
+            "name": "UserType",
+            "optional": false,
+            "type": "OR",
+            "note": ""
+        },
+        "Beginner": {
+            "name": "Beginner",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Intermediate": {
+            "name": "Intermediate",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Advanced": {
+            "name": "Advanced",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Expert": {
+            "name": "Expert",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "AuthenticatedUser": {
+            "name": "AuthenticatedUser",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ExecutionControl_1": {
+            "name": "ExecutionControl_1",
+            "optional": false,
+            "type": "OR",
+            "note": ""
+        },
+        "Undo": {
+            "name": "Undo",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Redo": {
+            "name": "Redo",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Cancel": {
+            "name": "Cancel",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "GoBack": {
+            "name": "GoBack",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Shortcuts": {
+            "name": "Shortcuts",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Locale": {
+            "name": "Locale",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "InteractionFeedback": {
+            "name": "InteractionFeedback",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ProgressFeedback": {
+            "name": "ProgressFeedback",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SystemStatusDisplay": {
+            "name": "SystemStatusDisplay",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Alerts": {
+            "name": "Alerts",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "FileStorage": {
+            "name": "FileStorage",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DatabaseStorage": {
+            "name": "DatabaseStorage",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "FileStorageOperations": {
+            "name": "FileStorageOperations",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "CreateFile": {
+            "name": "CreateFile",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ModifyFile": {
+            "name": "ModifyFile",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DeleteFile": {
+            "name": "DeleteFile",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "FileType": {
+            "name": "FileType",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Binary": {
+            "name": "Binary",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "TXTFile": {
+            "name": "TXTFile",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "XMLFile": {
+            "name": "XMLFile",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "JSONFile": {
+            "name": "JSONFile",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "FileStorageImplementations": {
+            "name": "FileStorageImplementations",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "JavaIO": {
+            "name": "JavaIO",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "TemporalFile": {
+            "name": "TemporalFile",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DatabaseStorageOperations": {
+            "name": "DatabaseStorageOperations",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Store": {
+            "name": "Store",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Query": {
+            "name": "Query",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DatabaseStorageImplementations": {
+            "name": "DatabaseStorageImplementations",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "MySQL": {
+            "name": "MySQL",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MongoDB": {
+            "name": "MongoDB",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "OracleDB": {
+            "name": "OracleDB",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DatabaseType": {
+            "name": "DatabaseType",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Relational": {
+            "name": "Relational",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "NoSQL": {
+            "name": "NoSQL",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DataType": {
+            "name": "DataType",
+            "optional": false,
+            "type": "OR",
+            "note": ""
+        },
+        "Integers": {
+            "name": "Integers",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Strings": {
+            "name": "Strings",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Floats": {
+            "name": "Floats",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Objects": {
+            "name": "Objects",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SecureDatabase": {
+            "name": "SecureDatabase",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "LocationAware": {
+            "name": "LocationAware",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "TimeAware": {
+            "name": "TimeAware",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DeviceAware": {
+            "name": "DeviceAware",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "UserAware": {
+            "name": "UserAware",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "EnvironmentAware": {
+            "name": "EnvironmentAware",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "GPS": {
+            "name": "GPS",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "WiFiLocation": {
+            "name": "WiFiLocation",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "BatteryStatus": {
+            "name": "BatteryStatus",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "IRSensor": {
+            "name": "IRSensor",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Caching": {
+            "name": "Caching",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CachingOperations": {
+            "name": "CachingOperations",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "CacheStore": {
+            "name": "CacheStore",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CacheQuery": {
+            "name": "CacheQuery",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CacheUpdate": {
+            "name": "CacheUpdate",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CachingImplementations": {
+            "name": "CachingImplementations",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "JavaCachingSystem": {
+            "name": "JavaCachingSystem",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Caffeine": {
+            "name": "Caffeine",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MaxSizeCache": {
+            "name": "MaxSizeCache",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CacheType": {
+            "name": "CacheType",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "LocalCache": {
+            "name": "LocalCache",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "RemoteCache": {
+            "name": "RemoteCache",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "MaxLifeSeconds": {
+            "name": "MaxLifeSeconds",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "EternalObjects": {
+            "name": "EternalObjects",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        }
+    },
+    "tree": {
+        "id": "FQAs",
+        "children": [
+            {
+                "id": "Security",
+                "children": [
+                    {
+                        "id": "Encryption",
+                        "children": [
+                            {
+                                "id": "EncryptionAlgorithms",
+                                "children": [
+                                    {
+                                        "id": "Asymmetric",
+                                        "children": [
+                                            {
+                                                "id": "RSA"
+                                            },
+                                            {
+                                                "id": "DSA"
+                                            },
+                                            {
+                                                "id": "ECDSA"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "Symmetric",
+                                        "children": [
+                                            {
+                                                "id": "AES"
+                                            },
+                                            {
+                                                "id": "DESede"
+                                            },
+                                            {
+                                                "id": "Blowfish"
+                                            },
+                                            {
+                                                "id": "DES"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "KeySize"
+                            },
+                            {
+                                "id": "EncryptionImplementations",
+                                "children": [
+                                    {
+                                        "id": "JavaxCrypto"
+                                    },
+                                    {
+                                        "id": "BouncyCastle"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "EncryptionOperations",
+                                "children": [
+                                    {
+                                        "id": "Encrypt"
+                                    },
+                                    {
+                                        "id": "Decrypt"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Mode",
+                                "children": [
+                                    {
+                                        "id": "CBC"
+                                    },
+                                    {
+                                        "id": "ECB"
+                                    },
+                                    {
+                                        "id": "CFB"
+                                    },
+                                    {
+                                        "id": "CTR"
+                                    },
+                                    {
+                                        "id": "CTS"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Padding",
+                                "children": [
+                                    {
+                                        "id": "PKCS5"
+                                    },
+                                    {
+                                        "id": "PKCS1"
+                                    },
+                                    {
+                                        "id": "OAEP"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Authentication",
+                        "children": [
+                            {
+                                "id": "AuthenticationImplementations",
+                                "children": [
+                                    {
+                                        "id": "JAAS"
+                                    },
+                                    {
+                                        "id": "SpringSecurity"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "AuthenticationOperations",
+                                "children": [
+                                    {
+                                        "id": "Authenticate"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "AuthenticationMechanism",
+                                "children": [
+                                    {
+                                        "id": "UserPassword"
+                                    },
+                                    {
+                                        "id": "DigitalCertificate",
+                                        "children": [
+                                            {
+                                                "id": "PseudonymousCertificate"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "Biometric"
+                                    },
+                                    {
+                                        "id": "SocialID"
+                                    },
+                                    {
+                                        "id": "Pin"
+                                    },
+                                    {
+                                        "id": "MatrixCode"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "PasswordLength"
+                            },
+                            {
+                                "id": "PasswordType",
+                                "children": [
+                                    {
+                                        "id": "Numeric"
+                                    },
+                                    {
+                                        "id": "Alphanumeric"
+                                    },
+                                    {
+                                        "id": "SpecialChars"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "LimitedSession"
+                            },
+                            {
+                                "id": "AuthenticationLogging"
+                            },
+                            {
+                                "id": "AnonymousUser"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Hashing",
+                        "children": [
+                            {
+                                "id": "HashingImplementations",
+                                "children": [
+                                    {
+                                        "id": "JavaSecurityMessageDigest"
+                                    },
+                                    {
+                                        "id": "Guava"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "HashingOperations",
+                                "children": [
+                                    {
+                                        "id": "Hash"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "HashingAlgorithms",
+                                "children": [
+                                    {
+                                        "id": "MD5"
+                                    },
+                                    {
+                                        "id": "SHA1"
+                                    },
+                                    {
+                                        "id": "SHA256"
+                                    },
+                                    {
+                                        "id": "SHA512"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Confidentiality"
+                    },
+                    {
+                        "id": "Privacy"
+                    },
+                    {
+                        "id": "Integrity"
+                    },
+                    {
+                        "id": "Non_Repudiation"
+                    }
+                ]
+            },
+            {
+                "id": "Usability",
+                "children": [
+                    {
+                        "id": "Logging",
+                        "children": [
+                            {
+                                "id": "LoggingOperations",
+                                "children": [
+                                    {
+                                        "id": "Log"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "LoggingImplementations",
+                                "children": [
+                                    {
+                                        "id": "Log4J"
+                                    },
+                                    {
+                                        "id": "LogBack"
+                                    },
+                                    {
+                                        "id": "JavaUtilLogging"
+                                    },
+                                    {
+                                        "id": "SimpleImplementationSLF4J"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Handler",
+                                "children": [
+                                    {
+                                        "id": "ConsoleLog"
+                                    },
+                                    {
+                                        "id": "FileLog"
+                                    },
+                                    {
+                                        "id": "DatabaseLog"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Format",
+                                "children": [
+                                    {
+                                        "id": "TXT"
+                                    },
+                                    {
+                                        "id": "XML"
+                                    },
+                                    {
+                                        "id": "HTML"
+                                    },
+                                    {
+                                        "id": "JSON"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Level",
+                                "children": [
+                                    {
+                                        "id": "Trace"
+                                    },
+                                    {
+                                        "id": "Debug"
+                                    },
+                                    {
+                                        "id": "Info"
+                                    },
+                                    {
+                                        "id": "Warning"
+                                    },
+                                    {
+                                        "id": "Error"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "CypheredMessages"
+                            },
+                            {
+                                "id": "HistoryLog"
+                            },
+                            {
+                                "id": "ErrorLog",
+                                "children": [
+                                    {
+                                        "id": "TraceFile"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ContextualHelp",
+                        "children": [
+                            {
+                                "id": "ContextualHelpOperations",
+                                "children": [
+                                    {
+                                        "id": "ShowHelp"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "ContextualHelpImplementations",
+                                "children": [
+                                    {
+                                        "id": "JavaWizardAPI"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "HelpType",
+                                "children": [
+                                    {
+                                        "id": "Tutorial"
+                                    },
+                                    {
+                                        "id": "Wizard"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "UserType",
+                                "children": [
+                                    {
+                                        "id": "Beginner"
+                                    },
+                                    {
+                                        "id": "Intermediate"
+                                    },
+                                    {
+                                        "id": "Advanced"
+                                    },
+                                    {
+                                        "id": "Expert"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "AuthenticatedUser"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ExecutionControl",
+                        "children": [
+                            {
+                                "id": "ExecutionControl_1",
+                                "children": [
+                                    {
+                                        "id": "Undo"
+                                    },
+                                    {
+                                        "id": "Redo"
+                                    },
+                                    {
+                                        "id": "Cancel"
+                                    },
+                                    {
+                                        "id": "GoBack"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Shortcuts"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Internationalization",
+                        "children": [
+                            {
+                                "id": "Locale"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Feedback",
+                        "children": [
+                            {
+                                "id": "InteractionFeedback"
+                            },
+                            {
+                                "id": "ProgressFeedback"
+                            },
+                            {
+                                "id": "SystemStatusDisplay"
+                            },
+                            {
+                                "id": "Alerts"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Persistence",
+                "children": [
+                    {
+                        "id": "FileStorage",
+                        "children": [
+                            {
+                                "id": "FileStorageOperations",
+                                "children": [
+                                    {
+                                        "id": "CreateFile"
+                                    },
+                                    {
+                                        "id": "ModifyFile"
+                                    },
+                                    {
+                                        "id": "DeleteFile"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "FileType",
+                                "children": [
+                                    {
+                                        "id": "Binary"
+                                    },
+                                    {
+                                        "id": "TXTFile"
+                                    },
+                                    {
+                                        "id": "XMLFile"
+                                    },
+                                    {
+                                        "id": "JSONFile"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "FileStorageImplementations",
+                                "children": [
+                                    {
+                                        "id": "JavaIO"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "TemporalFile"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "DatabaseStorage",
+                        "children": [
+                            {
+                                "id": "DatabaseStorageOperations",
+                                "children": [
+                                    {
+                                        "id": "Store"
+                                    },
+                                    {
+                                        "id": "Query"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "DatabaseStorageImplementations",
+                                "children": [
+                                    {
+                                        "id": "MySQL"
+                                    },
+                                    {
+                                        "id": "MongoDB"
+                                    },
+                                    {
+                                        "id": "OracleDB"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "DatabaseType",
+                                "children": [
+                                    {
+                                        "id": "Relational"
+                                    },
+                                    {
+                                        "id": "NoSQL"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "DataType",
+                                "children": [
+                                    {
+                                        "id": "Integers"
+                                    },
+                                    {
+                                        "id": "Strings"
+                                    },
+                                    {
+                                        "id": "Floats"
+                                    },
+                                    {
+                                        "id": "Objects"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "SecureDatabase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "ContextAwareness",
+                "children": [
+                    {
+                        "id": "LocationAware",
+                        "children": [
+                            {
+                                "id": "GPS"
+                            },
+                            {
+                                "id": "WiFiLocation"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "TimeAware"
+                    },
+                    {
+                        "id": "DeviceAware",
+                        "children": [
+                            {
+                                "id": "BatteryStatus"
+                            },
+                            {
+                                "id": "IRSensor"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "UserAware"
+                    },
+                    {
+                        "id": "EnvironmentAware"
+                    }
+                ]
+            },
+            {
+                "id": "Performance",
+                "children": [
+                    {
+                        "id": "Caching",
+                        "children": [
+                            {
+                                "id": "CachingOperations",
+                                "children": [
+                                    {
+                                        "id": "CacheStore"
+                                    },
+                                    {
+                                        "id": "CacheQuery"
+                                    },
+                                    {
+                                        "id": "CacheUpdate"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "CachingImplementations",
+                                "children": [
+                                    {
+                                        "id": "JavaCachingSystem"
+                                    },
+                                    {
+                                        "id": "Caffeine"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "MaxSizeCache"
+                            },
+                            {
+                                "id": "CacheType",
+                                "children": [
+                                    {
+                                        "id": "LocalCache"
+                                    },
+                                    {
+                                        "id": "RemoteCache"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "MaxLifeSeconds"
+                            },
+                            {
+                                "id": "EternalObjects"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "constraints": {
+        "1": {
+            "type": "OrTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "TimeAware"
+                    ]
+                },
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "BatteryStatus"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "2": {
+            "type": "OrTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Alerts"
+                    ]
+                },
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "BatteryStatus"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "3": {
+            "type": "OrTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "FileStorage"
+                    ]
+                },
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "TraceFile"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "4": {
+            "type": "OrTerm",
+            "operands": [
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "SimpleImplementationSLF4J"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "XML"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "5": {
+            "type": "OrTerm",
+            "operands": [
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "AuthenticatedUser"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Authentication"
+                    ]
+                }
+            ]
+        },
+        "6": {
+            "type": "OrTerm",
+            "operands": [
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "ErrorLog"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Error"
+                    ]
+                }
+            ]
+        },
+        "7": {
+            "type": "OrTerm",
+            "operands": [
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "HistoryLog"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Trace"
+                    ]
+                }
+            ]
+        }
+    }
+}

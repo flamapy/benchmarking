@@ -1,0 +1,362 @@
+{
+    "id": "FM_TankWar",
+    "name": "FM_TankWar",
+    "features": {
+        "TankWar": {
+            "name": "TankWar",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Platform": {
+            "name": "Platform",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "PC": {
+            "name": "PC",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Handy": {
+            "name": "Handy",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Tools": {
+            "name": "Tools",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "Beschleunigung": {
+            "name": "Beschleunigung",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "einfrieren": {
+            "name": "einfrieren",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Bombe": {
+            "name": "Bombe",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Energie": {
+            "name": "Energie",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Feuerkraft": {
+            "name": "Feuerkraft",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Mars": {
+            "name": "Mars",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "explodieren": {
+            "name": "explodieren",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "GUI": {
+            "name": "GUI",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Map": {
+            "name": "Map",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "M_240": {
+            "name": "M_240",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "M_600": {
+            "name": "M_600",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "M_780": {
+            "name": "M_780",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Image": {
+            "name": "Image",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "fuer_PC": {
+            "name": "fuer_PC",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "fuer_Handy": {
+            "name": "fuer_Handy",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "IMG_tool": {
+            "name": "IMG_tool",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Record": {
+            "name": "Record",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "Re_fuer_PC": {
+            "name": "Re_fuer_PC",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Re_fuer_Handy": {
+            "name": "Re_fuer_Handy",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Soundeffekt": {
+            "name": "Soundeffekt",
+            "optional": true,
+            "type": "XOR",
+            "note": ""
+        },
+        "Sound_fuer_pc": {
+            "name": "Sound_fuer_pc",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Sound_fuer_Handy": {
+            "name": "Sound_fuer_Handy",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Language": {
+            "name": "Language",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "EN": {
+            "name": "EN",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DE": {
+            "name": "DE",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Tanks": {
+            "name": "Tanks",
+            "optional": false,
+            "type": "OR",
+            "note": ""
+        },
+        "USA_M1Abrams": {
+            "name": "USA_M1Abrams",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Germany_Leopard": {
+            "name": "Germany_Leopard",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "China_Type99": {
+            "name": "China_Type99",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "AI": {
+            "name": "AI",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Easy": {
+            "name": "Easy",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Hard": {
+            "name": "Hard",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        }
+    },
+    "tree": {
+        "id": "TankWar",
+        "children": [
+            {
+                "id": "Platform",
+                "children": [
+                    {
+                        "id": "PC"
+                    },
+                    {
+                        "id": "Handy"
+                    }
+                ]
+            },
+            {
+                "id": "Tools",
+                "children": [
+                    {
+                        "id": "Beschleunigung"
+                    },
+                    {
+                        "id": "einfrieren"
+                    },
+                    {
+                        "id": "Bombe"
+                    },
+                    {
+                        "id": "Energie"
+                    },
+                    {
+                        "id": "Feuerkraft"
+                    },
+                    {
+                        "id": "Mars"
+                    }
+                ]
+            },
+            {
+                "id": "explodieren"
+            },
+            {
+                "id": "GUI",
+                "children": [
+                    {
+                        "id": "Map",
+                        "children": [
+                            {
+                                "id": "M_240"
+                            },
+                            {
+                                "id": "M_600"
+                            },
+                            {
+                                "id": "M_780"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Image",
+                        "children": [
+                            {
+                                "id": "fuer_PC"
+                            },
+                            {
+                                "id": "fuer_Handy"
+                            },
+                            {
+                                "id": "IMG_tool"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Record",
+                "children": [
+                    {
+                        "id": "Re_fuer_PC"
+                    },
+                    {
+                        "id": "Re_fuer_Handy"
+                    }
+                ]
+            },
+            {
+                "id": "Soundeffekt",
+                "children": [
+                    {
+                        "id": "Sound_fuer_pc"
+                    },
+                    {
+                        "id": "Sound_fuer_Handy"
+                    }
+                ]
+            },
+            {
+                "id": "Language",
+                "children": [
+                    {
+                        "id": "EN"
+                    },
+                    {
+                        "id": "DE"
+                    }
+                ]
+            },
+            {
+                "id": "Tanks",
+                "children": [
+                    {
+                        "id": "USA_M1Abrams"
+                    },
+                    {
+                        "id": "Germany_Leopard"
+                    },
+                    {
+                        "id": "China_Type99"
+                    }
+                ]
+            },
+            {
+                "id": "AI",
+                "children": [
+                    {
+                        "id": "Easy"
+                    },
+                    {
+                        "id": "Hard"
+                    }
+                ]
+            }
+        ]
+    },
+    "constraints": {}
+}

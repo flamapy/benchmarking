@@ -1,0 +1,963 @@
+{
+    "id": "FM_AAFMFramework",
+    "name": "FM_AAFMFramework",
+    "features": {
+        "AAFMFramework": {
+            "name": "AAFMFramework",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Packages": {
+            "name": "Packages",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DepMng": {
+            "name": "DepMng",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "pip": {
+            "name": "pip",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "pipdeptree": {
+            "name": "pipdeptree",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "setuptools": {
+            "name": "setuptools",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "wheel": {
+            "name": "wheel",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "pkgresources": {
+            "name": "pkgresources",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "APISolvers": {
+            "name": "APISolvers",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "pythonsat": {
+            "name": "pythonsat",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "pycosat": {
+            "name": "pycosat",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "pylgl": {
+            "name": "pylgl",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "pyPicosat": {
+            "name": "pyPicosat",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "pyglucose": {
+            "name": "pyglucose",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "pycryptosat": {
+            "name": "pycryptosat",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "satyrn": {
+            "name": "satyrn",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "satispy": {
+            "name": "satispy",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "umo": {
+            "name": "umo",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "pydepqbf": {
+            "name": "pydepqbf",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ParserTechnology": {
+            "name": "ParserTechnology",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "antlr4python3runtime": {
+            "name": "antlr4python3runtime",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SimpleParse": {
+            "name": "SimpleParse",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "larkparser": {
+            "name": "larkparser",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ebnf": {
+            "name": "ebnf",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Utils": {
+            "name": "Utils",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "six": {
+            "name": "six",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "pybind11": {
+            "name": "pybind11",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Metamodels": {
+            "name": "Metamodels",
+            "optional": false,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "FeatureModel": {
+            "name": "FeatureModel",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CNFModel": {
+            "name": "CNFModel",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DecisionModel": {
+            "name": "DecisionModel",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "AutomatedReasoning": {
+            "name": "AutomatedReasoning",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Solvers": {
+            "name": "Solvers",
+            "optional": false,
+            "type": "OR",
+            "note": ""
+        },
+        "MiniSAT": {
+            "name": "MiniSAT",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "PicoSAT": {
+            "name": "PicoSAT",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Glucose": {
+            "name": "Glucose",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CaDiCaL": {
+            "name": "CaDiCaL",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Minicard": {
+            "name": "Minicard",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Maple": {
+            "name": "Maple",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CryptoMiniSat": {
+            "name": "CryptoMiniSat",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Lingeling": {
+            "name": "Lingeling",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CBC": {
+            "name": "CBC",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DepQBF": {
+            "name": "DepQBF",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Operations": {
+            "name": "Operations",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "ValidModel": {
+            "name": "ValidModel",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ValidConfiguration": {
+            "name": "ValidConfiguration",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ValidProduct": {
+            "name": "ValidProduct",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "AllProducts": {
+            "name": "AllProducts",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "DeadFeatures": {
+            "name": "DeadFeatures",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "CoreFeatures": {
+            "name": "CoreFeatures",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ErrorDetection": {
+            "name": "ErrorDetection",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "ErrorDiagnosis": {
+            "name": "ErrorDiagnosis",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Interoperability": {
+            "name": "Interoperability",
+            "optional": true,
+            "type": "OR",
+            "note": ""
+        },
+        "FeatureIDE": {
+            "name": "FeatureIDE",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "SPLOT": {
+            "name": "SPLOT",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "UVL": {
+            "name": "UVL",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "System": {
+            "name": "System",
+            "optional": false,
+            "type": "XOR",
+            "note": ""
+        },
+        "Linux": {
+            "name": "Linux",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        },
+        "Win": {
+            "name": "Win",
+            "optional": true,
+            "type": "FEATURE",
+            "note": ""
+        }
+    },
+    "tree": {
+        "id": "AAFMFramework",
+        "children": [
+            {
+                "id": "Packages",
+                "children": [
+                    {
+                        "id": "DepMng",
+                        "children": [
+                            {
+                                "id": "pip",
+                                "children": [
+                                    {
+                                        "id": "pipdeptree"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "setuptools"
+                            },
+                            {
+                                "id": "wheel"
+                            },
+                            {
+                                "id": "pkgresources"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "APISolvers",
+                        "children": [
+                            {
+                                "id": "pythonsat"
+                            },
+                            {
+                                "id": "pycosat"
+                            },
+                            {
+                                "id": "pylgl"
+                            },
+                            {
+                                "id": "pyPicosat"
+                            },
+                            {
+                                "id": "pyglucose"
+                            },
+                            {
+                                "id": "pycryptosat"
+                            },
+                            {
+                                "id": "satyrn"
+                            },
+                            {
+                                "id": "satispy"
+                            },
+                            {
+                                "id": "umo"
+                            },
+                            {
+                                "id": "pydepqbf"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ParserTechnology",
+                        "children": [
+                            {
+                                "id": "antlr4python3runtime"
+                            },
+                            {
+                                "id": "SimpleParse"
+                            },
+                            {
+                                "id": "larkparser",
+                                "children": [
+                                    {
+                                        "id": "ebnf"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Utils",
+                        "children": [
+                            {
+                                "id": "six"
+                            },
+                            {
+                                "id": "pybind11"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Metamodels",
+                "children": [
+                    {
+                        "id": "FeatureModel"
+                    },
+                    {
+                        "id": "CNFModel"
+                    },
+                    {
+                        "id": "DecisionModel"
+                    }
+                ]
+            },
+            {
+                "id": "AutomatedReasoning",
+                "children": [
+                    {
+                        "id": "Solvers",
+                        "children": [
+                            {
+                                "id": "MiniSAT"
+                            },
+                            {
+                                "id": "PicoSAT"
+                            },
+                            {
+                                "id": "Glucose"
+                            },
+                            {
+                                "id": "CaDiCaL"
+                            },
+                            {
+                                "id": "Minicard"
+                            },
+                            {
+                                "id": "Maple"
+                            },
+                            {
+                                "id": "CryptoMiniSat"
+                            },
+                            {
+                                "id": "Lingeling"
+                            },
+                            {
+                                "id": "CBC"
+                            },
+                            {
+                                "id": "DepQBF"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Operations",
+                        "children": [
+                            {
+                                "id": "ValidModel"
+                            },
+                            {
+                                "id": "ValidConfiguration"
+                            },
+                            {
+                                "id": "ValidProduct"
+                            },
+                            {
+                                "id": "AllProducts"
+                            },
+                            {
+                                "id": "DeadFeatures"
+                            },
+                            {
+                                "id": "CoreFeatures"
+                            },
+                            {
+                                "id": "ErrorDetection"
+                            },
+                            {
+                                "id": "ErrorDiagnosis"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Interoperability",
+                "children": [
+                    {
+                        "id": "FeatureIDE"
+                    },
+                    {
+                        "id": "SPLOT"
+                    },
+                    {
+                        "id": "UVL"
+                    }
+                ]
+            },
+            {
+                "id": "System",
+                "children": [
+                    {
+                        "id": "Linux"
+                    },
+                    {
+                        "id": "Win"
+                    }
+                ]
+            }
+        ]
+    },
+    "constraints": {
+        "1": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "MiniSAT"
+                    ]
+                },
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "satispy"
+                            ]
+                        },
+                        {
+                            "type": "OrTerm",
+                            "operands": [
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "umo"
+                                    ]
+                                },
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "pythonsat"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "2": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Lingeling"
+                    ]
+                },
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "satispy"
+                            ]
+                        },
+                        {
+                            "type": "OrTerm",
+                            "operands": [
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "pylgl"
+                                    ]
+                                },
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "pythonsat"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "3": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "CBC"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "umo"
+                    ]
+                }
+            ]
+        },
+        "4": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "PicoSAT"
+                    ]
+                },
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "pycosat"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "pyPicosat"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "5": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Glucose"
+                    ]
+                },
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "pythonsat"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "pyglucose"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "6": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "DepQBF"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "pydepqbf"
+                    ]
+                }
+            ]
+        },
+        "7": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "CaDiCaL"
+                            ]
+                        },
+                        {
+                            "type": "OrTerm",
+                            "operands": [
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "Maple"
+                                    ]
+                                },
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "Minicard"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "pythonsat"
+                    ]
+                }
+            ]
+        },
+        "8": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "CryptoMiniSat"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "pycryptosat"
+                    ]
+                }
+            ]
+        },
+        "9": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "OrTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "satyrn"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "pyglucose"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "pybind11"
+                    ]
+                }
+            ]
+        },
+        "10": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "pythonsat"
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "six"
+                    ]
+                }
+            ]
+        },
+        "11": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "Win"
+                    ]
+                },
+                {
+                    "type": "AndTerm",
+                    "operands": [
+                        {
+                            "type": "NotTerm",
+                            "operands": [
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "umo"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "NotTerm",
+                            "operands": [
+                                {
+                                    "type": "FeatureTerm",
+                                    "operands": [
+                                        "pyPicosat"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "12": {
+            "type": "AndTerm",
+            "operands": [
+                {
+                    "type": "ImpliesTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "CNFModel"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "AutomatedReasoning"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "ImpliesTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "AutomatedReasoning"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "CNFModel"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "13": {
+            "type": "ImpliesTerm",
+            "operands": [
+                {
+                    "type": "AndTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "Linux"
+                            ]
+                        },
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "pip"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "pkgresources"
+                    ]
+                }
+            ]
+        },
+        "14": {
+            "type": "OrTerm",
+            "operands": [
+                {
+                    "type": "NotTerm",
+                    "operands": [
+                        {
+                            "type": "FeatureTerm",
+                            "operands": [
+                                "UVL"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FeatureTerm",
+                    "operands": [
+                        "ParserTechnology"
+                    ]
+                }
+            ]
+        }
+    }
+}
